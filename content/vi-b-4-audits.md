@@ -71,15 +71,23 @@ These tests provide a straightforward audit routine. Process owners do not need 
 
 Audits must also confirm that a process is not only stable but capable of meeting customer requirements. Control limits describe the voice of the process; specification limits describe the voice of the customer. A process can be in control yet produce off-spec output.
 
-To audit capability, teams calculate the sigma level and the process capability index Cpk.
+To audit capability, teams calculate the sigma level and the process capability index $C_{pk}$.
 
-The sigma level is the smaller of the two calculations:
+The sigma level is the smaller of the two Z-scores:
 
-`(USL − x̄) / σ`  or  `(LSL − x̄) / σ`
+$$
+Z_{USL} = \frac{USL - \bar{x}}{\sigma} \qquad Z_{LSL} = \frac{\bar{x} - LSL}{\sigma}
+$$
 
-where x̄ is the process median, σ is the standard deviation, USL is the upper specification limit, and LSL is the lower specification limit.
+where $\bar{x}$ is the process mean, $\sigma$ is the process standard deviation, $USL$ is the upper specification limit, and $LSL$ is the lower specification limit.
 
-Process capability Cpk is the sigma level divided by 3. A Cpk of 1.33 corresponds to a sigma level of 4, which many experts consider the minimum for satisfying most customers. Organizations often target a Cpk of 2.0, with a minimally acceptable value of 1.5. Including capability calculations in the audit verifies that the improved process is truly delivering to customer expectations, not merely operating within its natural control limits.
+Process capability $C_{pk}$ is the sigma level divided by 3:
+
+$$
+C_{pk} = \min\!\left(\frac{USL - \bar{x}}{3\sigma},\; \frac{\bar{x} - LSL}{3\sigma}\right)
+$$
+
+A $C_{pk}$ of 1.33 corresponds to a sigma level of 4, which many experts consider the minimum for satisfying most customers. Organizations often target a $C_{pk}$ of 2.0, with a minimally acceptable value of 1.5. Including capability calculations in the audit verifies that the improved process is truly delivering to customer expectations, not merely operating within its natural control limits.
 
 ## Control Tollgate Review as Final Audit
 
