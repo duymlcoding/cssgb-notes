@@ -15,7 +15,7 @@ Cp measures potential capability. It assumes the process is perfectly centred on
 
 $$C_p = \frac{\text{Tolerance zone}}{6\sigma}$$
 
-The denominator $6\sigma$ captures the natural process spread (±3σ from the mean). The value $\sigma$ is the short-term standard deviation derived from control charts, typically $\sigma = \bar{R}/d_2$.
+The denominator \$6\sigma$ captures the natural process spread (±3σ from the mean). The value $\sigma$ is the short-term standard deviation derived from control charts, typically $\sigma = \bar{R}/d_2$.
 
 A larger Cp indicates less variation relative to the specification width. For example, Cp = 1 means the natural tolerance (±3σ) exactly matches the specification limits. Cp = 2 means the specification width is twice the natural spread, the requirement for a Six Sigma process (σ ≤ 1/12 of the specification).
 
@@ -29,10 +29,10 @@ with
 
 $$Z_U = \frac{USL - \mu}{\sigma}, \qquad Z_L = \frac{\mu - LSL}{\sigma}$$
 
-- $USL$: upper specification limit
-- $LSL$: lower specification limit
-- $\mu$: process mean (estimated by $\bar{\bar{X}}$)
-- $\sigma$: short-term standard deviation from control chart
+- $USL $: upper specification limit
+- $LSL $: lower specification limit
+- $\mu $: process mean (estimated by $\bar{\bar{X}}$)
+- $\sigma $: short-term standard deviation from control chart
 
 Cpk is never larger than Cp. Equality occurs only when the process mean is exactly centered. A negative Cpk signals that the process mean lies outside the specification limits.
 
@@ -46,7 +46,7 @@ Multiplying by 100 gives the percentage of the specification consumed by the pro
 
 ### Example 1: Cp and Cpk for a Stable Process
 
-A shaft diameter has USL = 10.030 mm and LSL = 9.990 mm, tolerance = 0.040 mm. A control chart with subgroups of size 5 gives an average range $\bar{R} = 0.0070$ mm. The appropriate constant $d_2 = 2.326$, so
+A shaft diameter has USL = 10.030 mm and LSL = 9.990 mm, tolerance = 0.040 mm. A control chart with subgroups of size 5 gives an average range $\bar{R} = 0.0070$ mm. The appropriate constant $ d_2 = 2.326$, so
 
 $$\sigma = \frac{\bar{R}}{d_2} = \frac{0.0070}{2.326} = 0.00301 \text{ mm}$$
 
@@ -80,7 +80,7 @@ Interpretation: Cp = Cpk = 1.0 means the process is centred but just meets the s
 
 ## Process Performance Indices: Pp and Ppk
 
-Performance indices use overall sample standard deviation $s$, which captures all sources of variation (common and special causes) present in the data. They are used when the process is not in statistical control, when SPC data are unavailable, or when assessing supplier performance from incoming inspection records.
+Performance indices use overall sample standard deviation $s $, which captures all sources of variation (common and special causes) present in the data. They are used when the process is not in statistical control, when SPC data are unavailable, or when assessing supplier performance from incoming inspection records.
 
 ### Pp
 
@@ -90,9 +90,9 @@ where $s$ is the sample standard deviation:
 
 $$s = \sqrt{\frac{1}{N-1} \sum_{i=1}^{N} (x_i - \bar{x})^2}$$
 
-- $x_i$: individual measurements
+- $x_i $: individual measurements
 - $\bar{x}$: sample mean
-- $N$: number of measurements
+- $N $: number of measurements
 
 ### Ppk
 
@@ -100,7 +100,7 @@ $$P_{pk} = \min\!\left(\frac{USL - \bar{x}}{3 s},\; \frac{\bar{x} - LSL}{3 s}\ri
 
 ### Example 3: Pp and Ppk from a Manufacturing Line
 
-A quality engineer measures a critical parameter with USL = 10.030, LSL = 9.990. A random sample of devices yields $\bar{x} = 10.014$, $s = 0.004$.
+A quality engineer measures a critical parameter with USL = 10.030, LSL = 9.990. A random sample of devices yields $\bar{x} = 10.014$, $ s = 0.004$.
 
 Compute Pp:
 
@@ -118,7 +118,7 @@ Interpretation: Pp = 1.67 shows that the overall variation could theoretically m
 
 ### Example 4: Pp and Ppk from a Wide Sample
 
-A teacher collects test scores from a class: USL = 100, LSL = 60. The sample mean $\bar{x} = 85.2$ and sample standard deviation $s = 10.338$ (computed from the 15 scores: 67, 68, 73, …, 99).
+A teacher collects test scores from a class: USL = 100, LSL = 60. The sample mean $\bar{x} = 85.2$ and sample standard deviation $ s = 10.338$ (computed from the 15 scores: 67, 68, 73, …, 99).
 
 $$P_p = \frac{100 - 60}{6 \times 10.338} = \frac{40}{62.028} = 0.645$$
 
@@ -128,17 +128,17 @@ Interpretation: Pp = 0.645 means the spread of scores far exceeds the specified 
 
 ## Cpm, Capability Index for a Target
 
-Cpm is used when a process has a target value $T$ that may not be the midpoint of the specifications. It penalises deviation from $T$ in addition to variation.
+Cpm is used when a process has a target value $T$ that may not be the midpoint of the specifications. It penalises deviation from $ T$ in addition to variation.
 
 $$C_{pm} = \frac{USL - LSL}{6 \sqrt{s^2 + (\bar{x} - T)^2}}$$
 
-- $s$: sample standard deviation
+- $s $: sample standard deviation
 - $\bar{x}$: sample mean
-- $T$: specification target
+- $T $: specification target
 
 ### Example 5: Cpm from a Mechanical Fit
 
-For a length measurement, USL = 4.566 mm, LSL = 4.540 mm, target $T = 4.553$ mm. The dataset gives $\bar{x} = 4.54289$, $s = 0.0031118$.
+For a length measurement, USL = 4.566 mm, LSL = 4.540 mm, target $T = 4.553$ mm. The dataset gives $\bar{x} = 4.54289$, $ s = 0.0031118$.
 
 Compute the adjusted spread:
 
@@ -156,21 +156,21 @@ $$C_{pm} = \frac{0.026}{6 \times 0.01058} = \frac{0.026}{0.06348} = 0.410$$
 
 Interpretation: Cpm = 0.41 is low because both the variation and the offset from target are large relative to the tolerance. The process needs centering and variation reduction. If Cpm were close to Cp, the process would be on target.
 
-When the process is perfectly centred on the target, $C_{pm} = C_p$. Using the Example 2 data (centred, $s = 1.667$, tolerance = 10, $T = 15$) gives $C_{pm} = 10/(6 \times 1.667) = 1.0$.
+When the process is perfectly centred on the target, $C_{pm} = C_p $. Using the Example 2 data (centred, $ s = 1.667$, tolerance = 10, $ T = 15$) gives $ C_{pm} = 10/(6 \times 1.667) = 1.0$.
 
 ## Sigma Level of a Process
 
 The sigma level expresses the capability in terms of the number of standard deviations that fit between the process mean and the nearest specification limit, incorporating a 1.5σ shift to account for long-term dynamic variation.
 
-A Six Sigma process satisfies $Cp \ge 2$, meaning the specification width is at least 12σ. When the process mean drifts by up to 1.5σ over time, the effective distance to the specification limit becomes $6\sigma - 1.5\sigma = 4.5\sigma$. The fraction defective then corresponds to a $Z$ value of 4.5, which yields 3.4 defects per million opportunities total.
+A Six Sigma process satisfies $Cp \ge 2$, meaning the specification width is at least 12σ. When the process mean drifts by up to 1.5σ over time, the effective distance to the specification limit becomes \$6\sigma - 1.5\sigma = 4.5\sigma $. The fraction defective then corresponds to a $ Z$ value of 4.5, which yields 3.4 defects per million opportunities total.
 
 To calculate the sigma level from capability indices:
 
 1. Obtain the short-term capability index Cpk.
-2. Compute the short-term Z-score: $Z_{\text{ST}} = 3 \times Cpk$.
+2. Compute the short-term Z-score: $Z_{\text{ST}} = 3 \times Cpk $.
 3. Add 1.5 to obtain the long-term sigma level: $\text{Sigma Level} = Z_{\text{ST}} + 1.5$.
 
-Example: For the capable process in Example 1, Cpk = 1.772, so $Z_{\text{ST}} = 3 \times 1.772 = 5.316$. Sigma level $= 5.316 + 1.5 = 6.816$. This process exceeds six-sigma capability. If Cpk had been 1.33, sigma level would be $3 \times 1.33 + 1.5 = 5.49$, still a high level but leaving more defects.
+Example: For the capable process in Example 1, Cpk = 1.772, so $Z_{\text{ST}} = 3 \times 1.772 = 5.316$. Sigma level $= 5.316 + 1.5 = 6.816$. This process exceeds six-sigma capability. If Cpk had been 1.33, sigma level would be \$3 \times 1.33 + 1.5 = 5.49$, still a high level but leaving more defects.
 
 ## Short-Term vs. Long-Term Capability and the Sigma Shift
 

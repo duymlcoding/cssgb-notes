@@ -21,7 +21,7 @@ Measurement system analysis (MSA) must be performed first. Variation from the me
 
 ### 2. Rational Subgrouping and Control Charting
 
-Select a rational subgrouping scheme so that within-subgroup variation contains only common causes, while between-subgroup variation captures special causes. Typical subgroup sizes range from two to ten, with five being the most common. Consecutive parts sampled at equal intervals provide the data for an $\bar{X}$ and $R$ chart. For subgroup sizes greater than eight, the $\bar{X}$ and $s$ chart is used because it is more powerful at detecting shifts, though data collection costs may be higher. For low-volume processes, individual and moving range charts with a subgroup size of one are appropriate, but they are less sensitive to process shifts.
+Select a rational subgrouping scheme so that within-subgroup variation contains only common causes, while between-subgroup variation captures special causes. Typical subgroup sizes range from two to ten, with five being the most common. Consecutive parts sampled at equal intervals provide the data for an $\bar{X}$ and $ R$ chart. For subgroup sizes greater than eight, the $\bar{X}$ and $ s$ chart is used because it is more powerful at detecting shifts, though data collection costs may be higher. For low-volume processes, individual and moving range charts with a subgroup size of one are appropriate, but they are less sensitive to process shifts.
 
 ### 3. Verifying Stability
 
@@ -53,19 +53,19 @@ The area beyond each Z-value in a standard normal curve table represents the pro
 
 **Example 1: Package Shipping Weight**
 
-A shipping process has $USL = 1.10$ kg, $LSL = 1.00$ kg, $\bar{X} = 1.065$ kg, and $\hat{s} = 0.024$ kg.
+A shipping process has $USL = 1.10$ kg, $ LSL = 1.00$ kg, $\bar{X} = 1.065$ kg, and $\hat{s} = 0.024$ kg.
 
-Compute $Z_U$:
+Compute $Z_U $:
 $$
 Z_U = \frac{1.10 - 1.065}{0.024} = \frac{0.035}{0.024} \approx 1.46
 $$
 
-Compute $Z_L$:
+Compute $Z_L $:
 $$
 Z_L = \frac{1.065 - 1.00}{0.024} = \frac{0.065}{0.024} \approx 2.70
 $$
 
-From the standard normal table, the area beyond $Z = 1.46$ is 0.0721 (7.21% overweight), and the area beyond $Z = 2.70$ is 0.0035 (0.35% underweight). The total predicted nonconformance is approximately 7.56%. The practitioner would conclude that the process is not centered between the specification limits and that the long upper tail dominates the nonconformance. If $Z_U$ had been 2.0 instead of 1.46, the overweight proportion would drop to about 2.3%, and the team might focus first on reducing variation rather than shifting the mean.
+From the standard normal table, the area beyond $Z = 1.46$ is 0.0721 (7.21% overweight), and the area beyond $ Z = 2.70$ is 0.0035 (0.35% underweight). The total predicted nonconformance is approximately 7.56%. The practitioner would conclude that the process is not centered between the specification limits and that the long upper tail dominates the nonconformance. If $ Z_U$ had been 2.0 instead of 1.46, the overweight proportion would drop to about 2.3%, and the team might focus first on reducing variation rather than shifting the mean.
 
 **Example 2: Certification Exam Scores**
 
@@ -98,9 +98,9 @@ Three sampling strategies are used to collect data for control charts and capabi
 
 **Random Sampling** is appropriate for batch processes such as oven baking, spray painting, or heat treatment. If earlier experiments confirm that a randomly selected part represents the entire batch, the measurements from several random parts are averaged to form one subgroup point. Batch-to-batch variation is then tracked with a moving range of the averages, while within-batch variation is monitored via a range or standard deviation chart.
 
-**Systematic Sampling** involves selecting every $n$th part from a conveyor line or every $n$th customer transaction. This method provides a uniform time-based sampling and is typical for individual and moving range charts.
+**Systematic Sampling** involves selecting every $n$ th part from a conveyor line or every $n$ th customer transaction. This method provides a uniform time-based sampling and is typical for individual and moving range charts.
 
-**Subgroup Sampling** requires that consecutive parts be taken at a fixed interval to form each subgroup. The within-subgroup variation should contain only common causes, making the $\bar{X}$ and $R$ chart effective at detecting special causes that appear between subgroups. The subgroup intervals must be chosen to capture any special causes that may arise. For example, a typical practice is to take five consecutive parts every hour.
+**Subgroup Sampling** requires that consecutive parts be taken at a fixed interval to form each subgroup. The within-subgroup variation should contain only common causes, making the $\bar{X}$ and $ R$ chart effective at detecting special causes that appear between subgroups. The subgroup intervals must be chosen to capture any special causes that may arise. For example, a typical practice is to take five consecutive parts every hour.
 
 ## Practical Considerations
 
@@ -108,7 +108,7 @@ Organizations sometimes create internal specifications that are tighter than cus
 
 ## Exam Tips
 
-1. Given a stable process with known $\bar{X}$, $\hat{s}$, USL, and LSL, compute $Z_U$ and $Z_L$ and use a standard normal table snippet to determine the fraction of product outside specifications. Be prepared to explain which specification limit is more problematic and why.
+1. Given a stable process with known $\bar{X}$, $\hat{s}$, USL, and LSL, compute $ Z_U$ and $ Z_L$ and use a standard normal table snippet to determine the fraction of product outside specifications. Be prepared to explain which specification limit is more problematic and why.
 2. Differentiate between the conditions required for control charting (stability, rational subgrouping) and those required for capability estimation (normality of individuals). Explain why a process can be monitored with control charts even when data are nonnormal but capability assessment demands normality.
 3. Order the steps of a capability study correctly: MSA, rational subgrouping, control chart plotting, stability check, normality verification, and finally capability estimation with Z-values or natural process limits.
 4. Interpret natural process limits ($\bar{X} \pm 3\hat{s}$) relative to specification limits. Judge whether a process is capable simply by comparing the two intervals, without calculating an index.

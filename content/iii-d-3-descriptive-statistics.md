@@ -18,7 +18,7 @@ where
 * $\sum x$ is the sum of all observations, and
 * $n$ is the number of observations.
 
-The **median** $\tilde{x}$ is the middle value of a sorted data list; for an even number of points the median is the average of the two middle values. The **mode** is the most frequently occurring value. The **range** $R$ is the simplest measure of spread:
+The **median** $\tilde{x}$ is the middle value of a sorted data list; for an even number of points the median is the average of the two middle values. The **mode** is the most frequently occurring value. The **range** $ R$ is the simplest measure of spread:
 
 $$ R = \text{maximum} - \text{minimum} $$
 
@@ -29,7 +29,7 @@ A practical dataset of chemical product weights in grams serves to illustrate al
 10.9, 10.8, 11.7, 12.3, 10.6, 12.2, 11.6, 11.2, 10.7, 11.4
 ```
 
-The sum is $220.5$ grams and $n = 20$, so
+The sum is \$220.5$ grams and $ n = 20$, so
 
 $$ \bar{x} = \frac{220.5}{20} = 11.025 \text{ grams} $$
 
@@ -40,15 +40,15 @@ Sorting the data gives:
 10.9, 11.1, 11.2, 11.4, 11.4, 11.6, 11.7, 11.9, 12.2, 12.3
 ```
 
-The median $\tilde{x}$ is the average of the tenth and eleventh values, $10.9$ grams. Several values appear twice (10.6, 10.8, 10.9, 11.4), so the mode is not unique. The range is $12.3 - 9.7 = 2.6$ grams. A wide range or a mean far from a specification target can point to an unstable process that requires investigation before improvement efforts focus on reducing variation.
+The median $\tilde{x}$ is the average of the tenth and eleventh values, \$10.9$ grams. Several values appear twice (10.6, 10.8, 10.9, 11.4), so the mode is not unique. The range is \\$12.3 - 9.7 = 2.6$ grams. A wide range or a mean far from a specification target can point to an unstable process that requires investigation before improvement efforts focus on reducing variation.
 
 ### Standard Deviation
 
-The standard deviation is the primary statistical measure of variation. It quantifies the typical distance of data points from the mean. For a **population** of size $N$ with mean $\mu$, the population standard deviation $\sigma$ is
+The standard deviation is the primary statistical measure of variation. It quantifies the typical distance of data points from the mean. For a **population** of size $N$ with mean $\mu $, the population standard deviation $\sigma$ is
 
 $$ \sigma = \sqrt{\frac{1}{N}\sum_{i=1}^{N}(x_i - \mu)^2} $$
 
-For a **sample** of size $n$, the sample standard deviation $s$ uses $n-1$ in the denominator to compensate for the fact that the sample mean $\bar{x}$ is an estimate of the population mean:
+For a **sample** of size $n $, the sample standard deviation $ s$ uses $ n-1$ in the denominator to compensate for the fact that the sample mean $\bar{x}$ is an estimate of the population mean:
 
 $$ s = \sqrt{\frac{1}{n-1}\sum_{i=1}^{n}(x_i - \bar{x})^2} $$
 
@@ -58,7 +58,7 @@ $$ s = \sqrt{\frac{1}{n-1}\sum_{i=1}^{n}(x_i - \bar{x})^2} $$
 67, 68, 73, 74, 81, 85, 88, 88, 90, 90, 90, 93, 94, 98, 99
 ```
 
-Compute the mean $\mu$:
+Compute the mean $\mu $:
 
 $$ \mu = \frac{67 + 68 + 73 + 74 + 81 + 85 + 88 + 88 + 90 + 90 + 90 + 93 + 94 + 98 + 99}{15} = \frac{1278}{15} = 85.2 $$
 
@@ -81,13 +81,13 @@ Find each squared deviation and sum them:
 \end{aligned}
 ```
 
-Total squared deviation sum = $1496.4$. Thus
+Total squared deviation sum = \\$1496.4$. Thus
 
 $$ \sigma = \sqrt{\frac{1496.4}{15}} = \sqrt{99.76} \approx 9.987 $$
 
 The standard deviation of approximately 10 points indicates a fairly wide spread of performance around the mean of 85.2. If instead the standard deviation were 3 and the mean remained 85, the teacher would conclude that the class performs consistently, suggesting the teaching and test are effective. A large standard deviation coupled with a low mean, like 60 with σ = 30, would point to a split in student mastery and prompt a search for root causes such as a missing concept in one class.
 
-**Example 2, Chemical weights (sample data).** Using the 20 weight values as a sample, compute $s$. With $\bar{x} = 11.025$, the squared deviations sum to approximately $9.197$ (detailed arithmetic omitted for brevity but verifiable). Then
+**Example 2, Chemical weights (sample data).** Using the 20 weight values as a sample, compute $s $. With $\bar{x} = 11.025$, the squared deviations sum to approximately \$9.197$ (detailed arithmetic omitted for brevity but verifiable). Then
 
 $$ s = \sqrt{\frac{9.197}{20-1}} = \sqrt{\frac{9.197}{19}} \approx \sqrt{0.48405} \approx 0.696 \text{ grams} $$
 
@@ -145,7 +145,7 @@ The source text defines the count column as follows: the row containing the medi
 
 ### Box-and-Whisker Plot
 
-A box plot displays the minimum, first quartile ($Q_1$), median ($Q_2$), third quartile ($Q_3$), and maximum, along with any outliers. Quartiles divide the sorted data into four roughly equal sets.
+A box plot displays the minimum, first quartile ($Q_1$), median ($ Q_2$), third quartile ($ Q_3$), and maximum, along with any outliers. Quartiles divide the sorted data into four roughly equal sets.
 
 Using the nine bond-strength pull-test values from the source:
 
@@ -158,7 +158,7 @@ Using the nine bond-strength pull-test values from the source:
 - $Q_1$: median of the lower four values (8.085, 8.150, 8.250, 8.795) → $(8.150 + 8.250)/2 = 8.20$.
 - $Q_3$: median of the upper four values (9.565, 9.630, 9.950, 11.880) → $(9.630 + 9.950)/2 = 9.79$.
 
-Interquartile range $IQR = Q_3 - Q_1 = 9.79 - 8.20 = 1.59$. The upper inner fence is $Q_3 + 1.5 \times IQR = 9.79 + 2.385 = 12.175$; the lower inner fence is $Q_1 - 1.5 \times IQR = 8.20 - 2.385 = 5.815$. The whiskers extend to the most extreme observations inside the fences: 8.085 and 11.880. No points fall outside, so there are no outliers.
+Interquartile range $IQR = Q_3 - Q_1 = 9.79 - 8.20 = 1.59$. The upper inner fence is $ Q_3 + 1.5 \times IQR = 9.79 + 2.385 = 12.175$; the lower inner fence is $ Q_1 - 1.5 \times IQR = 8.20 - 2.385 = 5.815$. The whiskers extend to the most extreme observations inside the fences: 8.085 and 11.880. No points fall outside, so there are no outliers.
 
 In the box plot, the median line sits slightly left of center, and the upper whisker is longer than the lower, suggesting a right-skewed distribution. The practitioner would interpret this as a possible shift toward lower bond strengths. If the median were centered and whiskers symmetric, the data would appear normally distributed. Box plots also excel at comparing multiple groups. For the assembly process data in the source, period 2 showed the largest spread and several outliers, prompting the Green Belt to investigate root causes such as gas flow or temperature fluctuations.
 
@@ -181,11 +181,11 @@ Given $n$ pairs $(x_i, y_i)$,
 
 $$ r = \frac{\sum xy - \frac{\sum x \sum y}{n}}{\sqrt{\left(\sum x^2 - \frac{(\sum x)^2}{n}\right)\left(\sum y^2 - \frac{(\sum y)^2}{n}\right)}} $$
 
-$r$ always satisfies $-1 \le r \le 1$. Values near $+1$ indicate a strong positive linear relationship; values near $-1$ indicate a strong negative linear relationship; values near $0$ indicate no linear correlation.
+$r$ always satisfies $-1 \le r \le 1$. Values near $+1$ indicate a strong positive linear relationship; values near $-1$ indicate a strong negative linear relationship; values near \$0$ indicate no linear correlation.
 
 **Example 1, Exercise and weight loss.** Four observations from a weight-loss center:
 
-| Exercise (min/day) $x$ | Weight loss (lb) $y$ |
+| Exercise (min/day) $x$ | Weight loss (lb) $ y$ |
 |------------------------|----------------------|
 | 30                     | 1.0                  |
 | 45                     | 2.0                  |
@@ -222,7 +222,7 @@ The result $r \approx 0.98$ indicates a very strong positive linear correlation.
 
 **Example 2, Study hours and test scores.** A small dataset of $n=5$:
 
-| Hours studied $x$ | Test score $y$ |
+| Hours studied $x$ | Test score $ y$ |
 |-------------------|----------------|
 | 2                 | 60             |
 | 3                 | 65             |
@@ -241,15 +241,15 @@ $$
 
 $$ r = \frac{80}{\sqrt{26 \times 250}} = \frac{80}{\sqrt{6500}} \approx \frac{80}{80.62} \approx 0.993 $$
 
-With $r$ nearly $+1$, hours studied and test scores move together tightly. If $r$ had been near zero, the team would question whether study time alone drives performance and would look for other factors such as teaching quality or prior knowledge.
+With $r$ nearly $+1$, hours studied and test scores move together tightly. If $ r$ had been near zero, the team would question whether study time alone drives performance and would look for other factors such as teaching quality or prior knowledge.
 
-The **coefficient of determination** $r^2$ explains the proportion of variability in $y$ attributable to its linear relationship with $x$. For the exercise example, $r^2 = 0.954$, meaning 95.4% of the variation in weight loss can be explained by exercise time. In the study hours example, $r^2 = 0.986$. A low $r^2$ would signal that the regression line is a poor fit, and the team should not rely on the factor as a primary predictor.
+The **coefficient of determination** $r^2$ explains the proportion of variability in $ y$ attributable to its linear relationship with $ x $. For the exercise example, $ r^2 = 0.954$, meaning 95.4% of the variation in weight loss can be explained by exercise time. In the study hours example, $ r^2 = 0.986$. A low $ r^2$ would signal that the regression line is a poor fit, and the team should not rely on the factor as a primary predictor.
 
 ### Normal Probability Plot
 
 A normal probability plot assesses whether a sample is drawn from a normally distributed population. Many statistical tests and capability indices require normality. The plot is constructed so that data from a normal distribution fall approximately along a straight line. The Anderson-Darling statistic (AD) and its associated p-value provide a formal test.
 
-From the source: bond strength data with $n=19$ gave $AD = 0.471$ and p-value $= 0.217$. Because the p-value exceeds $0.05$ (the typical alpha risk), the team fails to reject the null hypothesis of normality. The vertical dashed lines in the plot represent the specification limits of 9 and 11; the horizontal lines show that about 20% of parts will fall below the lower spec and 17% above the upper spec. If the p-value had been below 0.05, the data would be considered non-normal, and the team would either transform the data or use non-parametric methods instead of standard capability analysis.
+From the source: bond strength data with $n=19$ gave $ AD = 0.471$ and p-value $= 0.217$. Because the p-value exceeds \$0.05$ (the typical alpha risk), the team fails to reject the null hypothesis of normality. The vertical dashed lines in the plot represent the specification limits of 9 and 11; the horizontal lines show that about 20% of parts will fall below the lower spec and 17% above the upper spec. If the p-value had been below 0.05, the data would be considered non-normal, and the team would either transform the data or use non-parametric methods instead of standard capability analysis.
 
 ### Weibull Plots and Reliability
 
@@ -267,7 +267,7 @@ The shape parameter $b$ characterizes the failure rate over time:
 * $b \approx 1$: constant failure rate (useful life or random failures).
 * $b > 1$: increasing failure rate (wear-out failures).
 
-In the source example, 15 units were tested until failure, with times including 4.011, 3.646, 5.226, etc. The Weibull plot (usually created with software) would provide estimates of $b$, the mean time between failures (MTBF), and the reliability at a specific time such as 3.9 hours. If $b$ were estimated to be significantly above 1, the team would conclude that units are in the wear-out phase, and a redesign or preventive maintenance schedule would be warranted. Conversely, $b < 1$ would point to early-life defects that might be screened out by a burn-in process.
+In the source example, 15 units were tested until failure, with times including 4.011, 3.646, 5.226, etc. The Weibull plot (usually created with software) would provide estimates of $b $, the mean time between failures (MTBF), and the reliability at a specific time such as 3.9 hours. If $ b$ were estimated to be significantly above 1, the team would conclude that units are in the wear-out phase, and a redesign or preventive maintenance schedule would be warranted. Conversely, $ b < 1$ would point to early-life defects that might be screened out by a burn-in process.
 
 ## The Pareto Principle
 
@@ -298,7 +298,7 @@ DPMO normalizes defect counts by the total number of chances for a defect to occ
 
 $$ \text{DPMO} = \frac{\text{Number of defects}}{\text{Total opportunities}} \times 1{,}000{,}000 $$
 
-**Example 1.** A mail-order retailer reviews 90 order forms; each form has 10 data fields, so total opportunities = $90 \times 10 = 900$. Two errors are found.
+**Example 1.** A mail-order retailer reviews 90 order forms; each form has 10 data fields, so total opportunities = \$90 \times 10 = 900$. Two errors are found.
 
 $$ \text{DPMO} = \frac{2}{900} \times 1{,}000{,}000 = 2{,}222 $$
 
@@ -346,13 +346,13 @@ RTY accounts for rework and scrap explicitly, providing the probability that a u
 
 $$ RTY_i = \frac{N_{\text{entering}} - (S + R)}{N_{\text{entering}}} $$
 
-where $S$ is scrap (units discarded) and $R$ is number of units reworked.
+where $S$ is scrap (units discarded) and $ R$ is number of units reworked.
 
 **Example.** Using the same three-step chain but with rework and scrap counts:
 
-- Step A: 100 enter, 5 scrapped, 5 reworked → units not scrapped or reworked = $100 - (5+5) = 90$ → $RTY_A = 90/100 = 0.90$.
-- Step B: 95 enter (from A), 10 scrapped, 5 reworked → good units = $95 - 15 = 80$ → $RTY_B = 80/95 \approx 0.842$.
-- Step C: 85 enter, 5 scrapped, 15 reworked → good units = $85 - 20 = 65$ → $RTY_C = 65/85 \approx 0.765$.
+- Step A: 100 enter, 5 scrapped, 5 reworked → units not scrapped or reworked = \$100 - (5+5) = 90$ → $ RTY_A = 90/100 = 0.90$.
+- Step B: 95 enter (from A), 10 scrapped, 5 reworked → good units = \$95 - 15 = 80$ → $ RTY_B = 80/95 \approx 0.842$.
+- Step C: 85 enter, 5 scrapped, 15 reworked → good units = \$85 - 20 = 65$ → $ RTY_C = 65/85 \approx 0.765$.
 
 Overall $RTY = 0.90 \times 0.842 \times 0.765 \approx 0.579$. While FTY was 0.80, the true first-pass yield free of any defect is only about 58%. A low RTY reveals muda in the form of rework loops and hidden factory costs, guiding the team to eliminate sources of defects rather than relying on inspection and repair.
 
@@ -361,6 +361,6 @@ Overall $RTY = 0.90 \times 0.842 \times 0.765 \approx 0.579$. While FTY was 0.80
 - **Calculate and interpret standard deviation:** Be prepared to compute $s$ and $\sigma$ from a small dataset, and explain how a change in spread would affect a process capability conclusion.
 - **Construct and read a stem-and-leaf plot:** Know how to set the leaf unit, locate the median row, and interpret clumps or gaps as signals of possible data anomalies.
 - **Analyze a box plot:** Given quartiles and fences, determine skewness and identify outliers; compare multiple box plots to judge shifts in median and variation.
-- **Compute the correlation coefficient $r$ from summary sums:** Use the provided formula to assess the strength and direction of a linear relationship, and defend why a high $r$ does not prove causation.
+- **Compute the correlation coefficient $r$ from summary sums:** Use the provided formula to assess the strength and direction of a linear relationship, and defend why a high $ r$ does not prove causation.
 - **Apply and distinguish FTY and RTY:** Given scrap and rework numbers for a multi-step process, compute both overall yields and explain what the difference tells about hidden factory losses.
 - **Interpret a normal probability plot:** State the conclusion when the Anderson-Darling p-value is above or below 0.05, and describe the impact on subsequent statistical analysis.

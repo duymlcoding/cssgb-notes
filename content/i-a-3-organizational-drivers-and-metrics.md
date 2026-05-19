@@ -43,7 +43,7 @@ The problem statement answers five specific questions:
 A strong problem statement allows a busy executive to grasp the issue immediately and permits the team to derive an objective directly from it.
 Consider this example from a distribution center:
 
-"In the first quarter, the California distribution center sent 108,000 packages. Of those packages, 15,000 were returned, resulting in a 13.8 percent return rate. The rate of return is above the accepted 7 percent rate and cost the company an additional $372,000 for the quarter. Over the course of the year, the current process could result in additional costs of over $1.4 million."
+"In the first quarter, the California distribution center sent 108,000 packages. Of those packages, 15,000 were returned, resulting in a 13.8 percent return rate. The rate of return is above the accepted 7 percent rate and cost the company an additional \\$372,000 for the quarter. Over the course of the year, the current process could result in additional costs of over \$1.4 million."
 
 The return rate metric is calculated as:
 
@@ -51,10 +51,10 @@ $$
 \text{Return Rate} = \frac{15{,}000}{108{,}000} \times 100 = 13.8\%
 $$
 
-The quarterly excess cost is $372,000, so the annualized potential cost becomes:
+The quarterly excess cost is \\$372,000, so the annualized potential cost becomes:
 
 $$
-\text{Annualized Cost} = \$372{,}000 \times 4 = \$1{,}488{,}000 \quad (\text{over } \$1.4 \text{ million})
+\text{Annualized Cost} = $372{,}000 \times 4 = $1{,}488{,}000 \quad (\text{over } $1.4 \text{ million})
 $$
 
 A weak statement might say only "The Canton, Ohio bakery is producing undercooked bread." That statement omits the time frame, the magnitude, the metric, and the financial impact.

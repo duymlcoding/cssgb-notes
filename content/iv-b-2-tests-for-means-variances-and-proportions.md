@@ -34,7 +34,7 @@ The procedure, as listed in the CSSGB Handbook, is:
 
 ### Example 1: Home Shopping Channel – 95% Confidence Interval
 
-From a sample of $n = 32$ customers, the average order is $\bar{X} = \$78.25$, and the population standard deviation is $\sigma = \$37.50$. Compute the 95% confidence interval for the population mean.
+From a sample of $n = 32$ customers, the average order is $\bar{X} = \\$78.25$, and the population standard deviation is $\sigma = \\$37.50$. Compute the 95% confidence interval for the population mean.
 
 $Z_{0.025} = 1.96$ (for a 95% two-sided interval).
 
@@ -50,7 +50,7 @@ $$
 78.25 \pm 13.00 \;\Rightarrow\; (65.25,\; 91.25)
 $$
 
-Interpretation: We are 95% confident that the true average order amount falls between \$65.25 and \$91.25.
+Interpretation: We are 95% confident that the true average order amount falls between \\\$65.25 and \\\$91.25.
 
 If the calculated interval had not captured the hypothesized value that management was testing, the practitioner would reject the null hypothesis and conclude that the population mean differs from that value.
 
@@ -95,7 +95,7 @@ The degrees of freedom are $n-1$. The critical values come from a chi-square tab
 
 ### Example 3: Comparing Process Variances
 
-A sample of $n = 35$ parts yields a variance $s^2 = 46$ units. The null hypothesis states that the population variance equals $36$ (a target from a different processing method). Use α = 0.05, two-sided.
+A sample of $n = 35$ parts yields a variance $ s^2 = 46$ units. The null hypothesis states that the population variance equals \$36$ (a target from a different processing method). Use α = 0.05, two-sided.
 
 $$
 \chi^2 = \frac{(35-1) \times 46}{36} = \frac{34 \times 46}{36} = \frac{1564}{36} \approx 43.44
@@ -114,11 +114,11 @@ $$
 $$
 
 Where  
-- $\chi^2_{\alpha/2,\; n-1}$ and $\chi^2_{1-\alpha/2,\; n-1}$ are the upper and lower critical values from the chi-square distribution for $n-1$ degrees of freedom.
+- $\chi^2_{\alpha/2,\; n-1}$ and $\chi^2_{1-\alpha/2,\; n-1}$ are the upper and lower critical values from the chi-square distribution for $ n-1$ degrees of freedom.
 
 ### Example 4: 90% Confidence Interval for Variance – Same Data
 
-Use $n = 35$, $s^2 = 46$, and a 90% confidence level. The chi-square critical values for $df = 34$ are $\chi^2_{0.95,34} = 21.66$ and $\chi^2_{0.05,34} = 48.60$ (from the handbook).
+Use $n = 35$, $ s^2 = 46$, and a 90% confidence level. The chi-square critical values for $ df = 34$ are $\chi^2_{0.95,34} = 21.66$ and $\chi^2_{0.05,34} = 48.60$ (from the handbook).
 
 Lower bound:
 
@@ -138,7 +138,7 @@ If the computed interval had completely excluded the target, the team would conc
 
 ## Hypothesis Tests and Confidence Intervals for a Proportion
 
-A proportion test compares a sample proportion $p'$ to a hypothesized population proportion $p_0$. When both $np_0$ and $n(1-p_0)$ are at least 5, the normal approximation to the binomial distribution is appropriate.
+A proportion test compares a sample proportion $p'$ to a hypothesized population proportion $ p_0$. When both $ np_0$ and $ n(1-p_0)$ are at least 5, the normal approximation to the binomial distribution is appropriate.
 
 ### Confidence Interval for a Proportion (Large Sample)
 
@@ -151,13 +151,13 @@ Where
 - $x$ = number of “successes” in the sample  
 - $n$ = sample size
 
-The handbook requires $np'$ and $n(1-p') \ge 5$ (conservatively $np_0$ and $n(1-p_0) \ge 5$ for hypothesis test).
+The handbook requires $np'$ and $ n(1-p') \ge 5$ (conservatively $ np_0$ and $ n(1-p_0) \ge 5$ for hypothesis test).
 
 ### Example 5: Proportion of Female Home Shopping Channel Customers
 
-Out of $n = 175$ random customers, $x = 110$ were female. Calculate the 90% confidence interval for the true proportion.
+Out of $n = 175$ random customers, $ x = 110$ were female. Calculate the 90% confidence interval for the true proportion.
 
-$p' = 110/175 = 0.62857$ (rounded to 0.629 in the handbook). $Z_{0.05} = 1.645$.
+$p' = 110/175 = 0.62857$ (rounded to 0.629 in the handbook). $ Z_{0.05} = 1.645$.
 
 Standard error:
 
@@ -214,11 +214,11 @@ Reject $H_0$ if the computed Z falls in the rejection region determined by the a
 
 ### Example 7: Vendor Defect Rate
 
-A vendor claims at most 2% defectives. Receiving inspection draws a random sample of $n = 500$ and finds $x = 15$ defectives, so $p' = 15/500 = 0.03$. Test at α = 0.05 whether the data indicate the vendor is wrong.
+A vendor claims at most 2% defectives. Receiving inspection draws a random sample of $n = 500$ and finds $ x = 15$ defectives, so $ p' = 15/500 = 0.03$. Test at α = 0.05 whether the data indicate the vendor is wrong.
 
-Condition check: $np_0 = 500 \times 0.02 = 10 \ge 5$ and $n(1-p_0) = 500 \times 0.98 = 490 \ge 5$, so normal approximation is valid.
+Condition check: $np_0 = 500 \times 0.02 = 10 \ge 5$ and $ n(1-p_0) = 500 \times 0.98 = 490 \ge 5$, so normal approximation is valid.
 
-Null hypothesis: $p \le 0.02$; alternative: $p > 0.02$ (right-tailed). α = 0.05, critical $Z_{0.05} = 1.645$.
+Null hypothesis: $p \le 0.02$; alternative: $ p > 0.02$ (right-tailed). α = 0.05, critical $ Z_{0.05} = 1.645$.
 
 Test statistic:
 
@@ -226,13 +226,13 @@ $$
 Z = \frac{0.03 - 0.02}{\sqrt{\frac{0.02 \times 0.98}{500}}} = \frac{0.01}{\sqrt{\frac{0.0196}{500}}} = \frac{0.01}{\sqrt{0.0000392}} = \frac{0.01}{0.006261} \approx 1.597
 $$
 
-$1.597 < 1.645$, so do not reject $H_0$.
+\$1.597 < 1.645$, so do not reject $ H_0$.
 
 Conclusion: At the 0.05 significance level, the data do not provide sufficient evidence that the vendor’s at-most-2% claim is false. The handbook’s Minitab analysis reports a p-value of 0.055, consistent with this conclusion.
 
 If the test statistic had exceeded the critical value, the receiving inspector would reject the shipment and work with the vendor to improve quality.
 
-When $np_0 < 5$ or $n(1-p_0) < 5$, the binomial distribution must be used directly without the normal approximation. The CSSGB Handbook states that the binomial distribution is applied for hypothesis tests relating to proportion under those small-sample conditions.
+When $np_0 < 5$ or $ n(1-p_0) < 5$, the binomial distribution must be used directly without the normal approximation. The CSSGB Handbook states that the binomial distribution is applied for hypothesis tests relating to proportion under those small-sample conditions.
 
 ## Paired-Comparison Tests: Two-Mean t-Tests and F-Test for Variances
 
@@ -262,8 +262,8 @@ Null hypothesis: $\mu_1 = \mu_2$ (two-tailed) vs. $\mu_1 \neq \mu_2$.
 
 Two operators machining parts on two CNCs. Data from the handbook:
 
-Machine 1: $\bar{X}_1 = 5.2334$, $s_1 = 0.0143$, $n_1 = 5$  
-Machine 2: $\bar{X}_2 = 5.2208$, $s_2 = 0.0179$, $n_2 = 5$
+Machine 1: $\bar{X}_1 = 5.2334$, $ s_1 = 0.0143$, $ n_1 = 5$  
+Machine 2: $\bar{X}_2 = 5.2208$, $ s_2 = 0.0179$, $ n_2 = 5$
 
 Compute pooled standard deviation:
 
@@ -277,7 +277,7 @@ $$
 t = \frac{5.2334 - 5.2208}{0.0162 \sqrt{\frac{1}{5} + \frac{1}{5}}} = \frac{0.0126}{0.0162 \sqrt{0.4}} = \frac{0.0126}{0.0162 \times 0.6325} = \frac{0.0126}{0.01024} \approx 1.23
 $$
 
-Degrees of freedom = 8. Critical value $t_{0.025,8} = 2.306$ (two-tailed α = 0.05). Since $1.23 < 2.306$, fail to reject $H_0$. The data do not show a significant difference between the machine means. The handbook’s Minitab output yields a p-value of 0.255.
+Degrees of freedom = 8. Critical value $t_{0.025,8} = 2.306$ (two-tailed α = 0.05). Since \\$1.23 < 2.306$, fail to reject $ H_0$. The data do not show a significant difference between the machine means. The handbook’s Minitab output yields a p-value of 0.255.
 
 Had the t-statistic exceeded the critical value, the team would conclude the machines produce parts with different average dimensions and investigate the differences.
 
@@ -312,7 +312,7 @@ Compute df:
 Numerator of df formula: $(0.0001050)^2 = 1.1025 \times 10^{-8}$  
 Denominator: $\frac{(0.0000409)^2}{4} + \frac{(0.0000641)^2}{4} = \frac{1.6728 \times 10^{-9}}{4} + \frac{4.1088 \times 10^{-9}}{4} = (4.182 + 10.272) \times 10^{-10} \approx 1.4454 \times 10^{-9}$
 
-$df \approx \frac{1.1025 \times 10^{-8}}{1.4454 \times 10^{-9}} \approx 7.63$, rounded down to 7. Critical value $t_{0.025,7} \approx 2.365$. The test statistic remains 1.23, so we fail to reject $H_0$. The conclusion is the same as the equal variance case.
+$df \approx \frac{1.1025 \times 10^{-8}}{1.4454 \times 10^{-9}} \approx 7.63$, rounded down to 7. Critical value $ t_{0.025,7} \approx 2.365$. The test statistic remains 1.23, so we fail to reject $ H_0$. The conclusion is the same as the equal variance case.
 
 If the variances had been shown to be different (via an F-test), the unequal variance test would be the appropriate choice. The handbook notes that Green Belts should first test for equality of variances and then select the appropriate t-test.
 
@@ -329,7 +329,7 @@ $$
 Where  
 - $\bar{d}$ = mean of the paired differences  
 - $s_d$ = standard deviation of the differences  
-- $n$ = number of pairs (differences), $df = n-1$
+- $n$ = number of pairs (differences), $ df = n-1$
 
 ### Example 10: Equipment Calibration – Before and After
 
@@ -339,7 +339,7 @@ Parts differences: 0.014, 0.027, 0.010, 0.010, 0.002
 
 $\bar{d} = (0.014+0.027+0.010+0.010+0.002)/5 = 0.063/5 = 0.0126$
 
-Compute $s_d$: deviations: -0.0014, 0.0144, -0.0026, -0.0026, -0.0106. Squared deviations: 1.96e-6, 2.0736e-4, 6.76e-6, 6.76e-6, 1.1236e-4. Sum = 3.3784e-4. Variance $s_d^2 = 3.3784e-4 / 4 = 8.446e-5$. $s_d = 0.00919$.
+Compute $s_d $: deviations: -0.0014, 0.0144, -0.0026, -0.0026, -0.0106. Squared deviations: 1.96e-6, 2.0736e-4, 6.76e-6, 6.76e-6, 1.1236e-4. Sum = 3.3784e-4. Variance $ s_d^2 = 3.3784e-4 / 4 = 8.446e-5$. $ s_d = 0.00919$.
 
 Test statistic:
 
@@ -347,7 +347,7 @@ $$
 t = \frac{0.0126}{0.00919 / \sqrt{5}} = \frac{0.0126}{0.00919 / 2.236} = \frac{0.0126}{0.00411} \approx 3.08
 $$
 
-$df = 4$. For a two-tailed test at α = 0.05, $t_{0.025,4} = 2.776$. Since $3.08 > 2.776$, reject $H_0: \mu_d = 0$.
+$df = 4$. For a two-tailed test at α = 0.05, $ t_{0.025,4} = 2.776$. Since \$3.08 > 2.776$, reject $ H_0: \mu_d = 0$.
 
 Conclusion: Calibration produced a statistically significant difference in measurements. The 95% confidence interval for the mean difference does not include 0 (0.00123 to 0.02397), confirming the result.
 
@@ -363,7 +363,7 @@ $$
 F = \frac{s_1^2}{s_2^2}
 $$
 
-Where the larger sample variance is usually placed in the numerator to obtain a right-tailed test. Degrees of freedom for numerator = $n_1 - 1$, for denominator = $n_2 - 1$.
+Where the larger sample variance is usually placed in the numerator to obtain a right-tailed test. Degrees of freedom for numerator = $n_1 - 1$, for denominator = $ n_2 - 1$.
 
 Null hypothesis: $\sigma_1^2 = \sigma_2^2$ (or $\sigma_1^2 \le \sigma_2^2$ for a one-tailed test of improvement).
 
@@ -371,16 +371,16 @@ Null hypothesis: $\sigma_1^2 = \sigma_2^2$ (or $\sigma_1^2 \le \sigma_2^2$ for a
 
 A pickle factory wants to know whether aging for one month improves consistency (reduces variance). Assume a 95% confidence level.
 
-Initial: $n_1 = 8$, $s_1 = 1800$  
-After one month: $n_2 = 6$, $s_2 = 600$
+Initial: $n_1 = 8$, $ s_1 = 1800$  
+After one month: $n_2 = 6$, $ s_2 = 600$
 
-The concern is improvement, so a one-tailed test with $H_0: \sigma_1^2 \le \sigma_2^2$ versus $H_a: \sigma_1^2 > \sigma_2^2$.
+The concern is improvement, so a one-tailed test with $H_0: \sigma_1^2 \le \sigma_2^2$ versus $ H_a: \sigma_1^2 > \sigma_2^2$.
 
 $$
 F = \frac{1800^2}{600^2} = \frac{3,240,000}{360,000} = 9
 $$
 
-Numerator df = 7, denominator df = 5. From the F-table, the critical value $F_{0.05,7,5} = 4.88$. Since $9 > 4.88$, reject $H_0$.
+Numerator df = 7, denominator df = 5. From the F-table, the critical value $F_{0.05,7,5} = 4.88$. Since \$9 > 4.88$, reject $ H_0$.
 
 There is evidence that the variance has decreased, meaning crispness is more consistent after aging one month.
 
@@ -392,7 +392,7 @@ One-way ANOVA tests whether the means of several populations are all equal. The 
 
 ### ANOVA Calculation Procedure
 
-Collect data from $k$ treatments, each with $n$ observations (balanced design). Let $N = k \times n$, $T$ be the grand total, $T_i$ be the sum of observations in treatment $i$, $y_{ij}$ the individual measurements.
+Collect data from $k$ treatments, each with $ n$ observations (balanced design). Let $ N = k \times n $, $ T$ be the grand total, $ T_i$ be the sum of observations in treatment $ i $, $ y_{ij}$ the individual measurements.
 
 Correction factor:
 
@@ -418,9 +418,9 @@ $$
 SSW = SST - SSB
 $$
 
-Degrees of freedom: between = $k-1$, within = $N - k$, total = $N - 1$.
+Degrees of freedom: between = $k-1$, within = $ N - k $, total = $ N - 1$.
 
-Mean squares: $MSB = SSB/(k-1)$, $MSW = SSW/(N-k)$.
+Mean squares: $MSB = SSB/(k-1)$, $ MSW = SSW/(N-k)$.
 
 F-statistic:
 
@@ -428,7 +428,7 @@ $$
 F = \frac{MSB}{MSW}
 $$
 
-Reject $H_0: \mu_1 = \mu_2 = \dots = \mu_k$ (all means equal) if $F$ exceeds the critical value $F_{\alpha, k-1, N-k}$. This is a right-tailed test.
+Reject $H_0: \mu_1 = \mu_2 = \dots = \mu_k$ (all means equal) if $ F$ exceeds the critical value $ F_{\alpha, k-1, N-k}$. This is a right-tailed test.
 
 ### Example 12: Effect of Temperature on Moisture Content
 
@@ -443,9 +443,9 @@ Data table (each column a temperature):
 | 11.2  | 11.6  | 13.0  |
 | 9.9   | 12.0  | 14.2  |
 
-Column totals: $T_{240} = 42.3$, $T_{220} = 46.9$, $T_{200} = 54.1$. Grand total $T = 42.3 + 46.9 + 54.1 = 143.3$.
+Column totals: $T_{240} = 42.3$, $ T_{220} = 46.9$, $ T_{200} = 54.1$. Grand total $ T = 42.3 + 46.9 + 54.1 = 143.3$.
 
-$N = 12$, $n = 4$, $k = 3$.
+$N = 12$, $ n = 4$, $ k = 3$.
 
 Sum of squared observations:
 
@@ -491,7 +491,7 @@ $$
 F = \frac{8.845}{0.3711} \approx 23.84 \text{ (handbook reports 23.92 with slightly different rounding, or 23.81 in Minitab)}
 $$
 
-Critical value from F-table: $F_{0.05,2,9} = 4.26$. Since the computed F far exceeds the critical value, reject $H_0$. At the 0.05 significance level, temperature does affect moisture content. The Minitab output yields a p-value of 0.000.
+Critical value from F-table: $F_{0.05,2,9} = 4.26$. Since the computed F far exceeds the critical value, reject $ H_0$. At the 0.05 significance level, temperature does affect moisture content. The Minitab output yields a p-value of 0.000.
 
 If the F-statistic had been below the critical value, the conclusion would be that there is no evidence of a temperature effect, and the team would search for other factors.
 
@@ -513,7 +513,7 @@ Where
 - $O$ = observed frequency in each category  
 - $E$ = expected frequency (calculated from the hypothesized proportions)
 
-Degrees of freedom = $k - 1$, with $k$ = number of categories. The test is always right-tailed.
+Degrees of freedom = $k - 1$, with $ k$ = number of categories. The test is always right-tailed.
 
 ### Example 13: Defect Type Distribution
 
@@ -534,10 +534,10 @@ Total = 27+60+100+21 = 208.
 
 Compute expected frequencies by multiplying each proportion by 208:
 
-- Paint run: $0.16 \times 208 = 33.28$
-- Paint blister: $0.28 \times 208 = 58.24$
-- Decal crooked: $0.42 \times 208 = 87.36$
-- Door cracked: $0.14 \times 208 = 29.12$
+- Paint run: \$0.16 \times 208 = 33.28$
+- Paint blister: \$0.28 \times 208 = 58.24$
+- Decal crooked: \$0.42 \times 208 = 87.36$
+- Door cracked: \$0.14 \times 208 = 29.12$
 
 Now compute the chi-square sum:
 
@@ -552,9 +552,9 @@ $$
 
 Total $\chi^2 = 1.185 + 0.053 + 1.829 + 2.264 = 5.331$
 
-Degrees of freedom = $4 - 1 = 3$. For α = 0.05, the critical value from the chi-square table is 7.815.
+Degrees of freedom = \$4 - 1 = 3$. For α = 0.05, the critical value from the chi-square table is 7.815.
 
-Since $5.331 < 7.815$, do not reject $H_0$. The data do not indicate a change in the defect distribution. The Minitab analysis confirms a p-value of 0.149.
+Since \\$5.331 < 7.815$, do not reject $ H_0$. The data do not indicate a change in the defect distribution. The Minitab analysis confirms a p-value of 0.149.
 
 If the test statistic had exceeded 7.815, the conclusion would be that the distribution has shifted, prompting a root-cause analysis of the defect categories that contributed most to the discrepancy.
 

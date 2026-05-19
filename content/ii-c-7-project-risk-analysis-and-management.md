@@ -40,19 +40,19 @@ Using the same weights and ratings shown in the table on page 105 of the CSSC Tr
 
 **Step 1:** Multiply each column total by the rating number at the top of that column.
 
-- No column: $1.3 \times 1 = 1.3$
-- Mostly No column: $4.4 \times 2 = 8.8$
-- Possibly column: $4.7 \times 3 = 14.1$
-- Mostly Yes column: $3.3 \times 4 = 13.2$
-- Yes column: $4.4 \times 5 = 22.0$
+- No column: \$1.3 \times 1 = 1.3$
+- Mostly No column: \$4.4 \times 2 = 8.8$
+- Possibly column: \$4.7 \times 3 = 14.1$
+- Mostly Yes column: \$3.3 \times 4 = 13.2$
+- Yes column: \$4.4 \times 5 = 22.0$
 
 **Step 2:** Sum the five results:
 
-$$1.3 + 8.8 + 14.1 + 13.2 + 22.0 = 59.4$$
+$\$1.3 + 8.8 + 14.1 + 13.2 + 22.0 = 59.4$$
 
 **Step 3:** Sum the original (un-multiplied) column totals:
 
-$$1.3 + 4.4 + 4.7 + 3.3 + 4.4 = 18.1$$
+$\$1.3 + 4.4 + 4.7 + 3.3 + 4.4 = 18.1$$
 
 **Step 4:** Divide the sum from Step 2 by the sum from Step 3 to obtain the project score:
 

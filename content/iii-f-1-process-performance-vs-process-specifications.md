@@ -29,11 +29,11 @@ The grid makes clear that statistical control and specification conformance are 
 
 ### Stability and the Use of Control Charts
 
-Before natural process limits can be calculated, the process must reach statistical stability. Stability means that no special-cause signals appear on a control chart over a sufficient number of subgroups; commonly 20 or 30 subgroups of points are used. Figure 15.2 in the Handbook shows an $\bar{X}$ and $R$ chart with plotted subgroups and the corresponding natural process limits. Subgroups that triggered SPC test rule violations are marked as square points. The accompanying test results report which rules failed and at which points. Modern software automates these tests, but interpretation and removal of assignable causes remain human tasks.
+Before natural process limits can be calculated, the process must reach statistical stability. Stability means that no special-cause signals appear on a control chart over a sufficient number of subgroups; commonly 20 or 30 subgroups of points are used. Figure 15.2 in the Handbook shows an $\bar{X}$ and $ R$ chart with plotted subgroups and the corresponding natural process limits. Subgroups that triggered SPC test rule violations are marked as square points. The accompanying test results report which rules failed and at which points. Modern software automates these tests, but interpretation and removal of assignable causes remain human tasks.
 
 A crucial rule: the range chart must be in control before the average chart is examined. Variation must be stable before any adjustment to the process average can be meaningful. After removing special causes, the control limits are recalculated; only then can the team firm up the natural process limits and proceed to capability assessment.
 
-Control charts such as $\bar{X}$ and $R$ or $\bar{X}$ and $S$ are robust to non-normality in the original data because of the central limit theorem. Nevertheless, when the final goal is to estimate the proportion of output outside specifications, the underlying distribution of the individual measurements must be normal. If a histogram or a normal probability plot shows severe departure from normality, a transformation such as the Box-Cox or Johnson transformation should be applied before computing capability metrics.
+Control charts such as $\bar{X}$ and $ R$ or $\bar{X}$ and $ S$ are robust to non-normality in the original data because of the central limit theorem. Nevertheless, when the final goal is to estimate the proportion of output outside specifications, the underlying distribution of the individual measurements must be normal. If a histogram or a normal probability plot shows severe departure from normality, a transformation such as the Box-Cox or Johnson transformation should be applied before computing capability metrics.
 
 ## Estimating Process Performance from Control Chart Data
 
@@ -41,7 +41,7 @@ Once the process is stable, the control chart provides the ingredients for a poi
 
 ### Estimating Standard Deviation from the Average Range
 
-For an $\bar{X}$ and $R$ chart, the within-subgroup variation is captured by the average range $\bar{R}$. Under the assumption that the individual measurements are normally distributed, the process standard deviation $\hat{\sigma}$ is estimated by
+For an $\bar{X}$ and $ R$ chart, the within-subgroup variation is captured by the average range $\bar{R}$. Under the assumption that the individual measurements are normally distributed, the process standard deviation $\hat{\sigma}$ is estimated by
 
 $$
 \hat{\sigma} = \frac{\bar{R}}{d_2}
@@ -50,9 +50,9 @@ $$
 where  
 
 * $\bar{R}$ is the average of the subgroup ranges,  
-* $d_2$ is a statistical constant that depends on the subgroup size $n$.  
+* $d_2$ is a statistical constant that depends on the subgroup size $ n $.  
 
-Common values of $d_2$ are 2.059 for $n=4$ and 2.326 for $n=5$. The estimate becomes more precise as the number of subgroups increases.
+Common values of $d_2$ are 2.059 for $ n=4$ and 2.326 for $ n=5$. The estimate becomes more precise as the number of subgroups increases.
 
 ### Computing Z Values
 
@@ -83,7 +83,7 @@ $$
 \phi(z) = \frac{1}{\sqrt{2\pi}} e^{-z^2/2}
 $$
 
-and the cumulative distribution function $\Phi(z)$ gives the area to the left of $z$. The area beyond $Z_U$ is $1 - \Phi(Z_U)$, and the area beyond $Z_L$ (lower tail) is $\Phi(-Z_L) = 1 - \Phi(Z_L)$. In practice, a standard normal table supplies these areas. The total proportion nonconforming is the sum of the two tail areas.
+and the cumulative distribution function $\Phi(z)$ gives the area to the left of $ z $. The area beyond $ Z_U$ is \$1 - \Phi(Z_U)$, and the area beyond $ Z_L$ (lower tail) is $\Phi(-Z_L) = 1 - \Phi(Z_L)$. In practice, a standard normal table supplies these areas. The total proportion nonconforming is the sum of the two tail areas.
 
 ### Natural Process Limits
 
@@ -100,14 +100,14 @@ If these limits fall outside the $[LSL, USL]$ interval, the process is not capab
 A packing line is specified to produce packages weighing between 1.00 and 1.10 lbs. Data collected over 30 days, with a subgroup size of four every two hours, give a grand average $\bar{\bar{X}} = 1.065 \text{ lbs}$ and an average range $\bar{R} = 0.05 \text{ lbs}$. The control chart shows no special causes.
 
 **Step 1: Estimate standard deviation.**  
-For $n=4$, $d_2 = 2.059$.
+For $n=4$, $ d_2 = 2.059$.
 
 $$
 \hat{\sigma} = \frac{0.05}{2.059} \approx 0.024 \text{ lbs}.
 $$
 
 **Step 2: Compute Z values.**  
-$USL = 1.10$, $LSL = 1.00$.
+$USL = 1.10$, $ LSL = 1.00$.
 
 $$
 Z_U = \frac{1.10 - 1.065}{0.024} = \frac{0.035}{0.024} \approx 1.46
@@ -118,10 +118,10 @@ Z_L = \frac{1.065 - 1.00}{0.024} = \frac{0.065}{0.024} \approx 2.70
 $$
 
 **Step 3: Obtain tail areas from a standard normal table.**  
-The area beyond $Z_U = 1.46$ is $0.0721$ (or 7.21%).  
-The area beyond $Z_L = 2.70$ is $0.0035$ (or 0.35%).
+The area beyond $Z_U = 1.46$ is \$0.0721$ (or 7.21%).  
+The area beyond $Z_L = 2.70$ is \$0.0035$ (or 0.35%).
 
-**Interpretation:** Approximately 7.21% of shipped packages are expected to be overweight, and 0.35% to be underweight. The total predicted nonconformance is $7.21\% + 0.35\% = 7.56\%$.
+**Interpretation:** Approximately 7.21% of shipped packages are expected to be overweight, and 0.35% to be underweight. The total predicted nonconformance is \$7.21\% + 0.35\% = 7.56\%$.
 
 **Step 4: Compute natural process limits.**
 
@@ -131,11 +131,11 @@ $$
 
 The natural limits 0.993 to 1.137 lbs fall outside the specification limits 1.00 to 1.10 lbs. This process is not capable. The Green Belt should first attempt to centre the process closer to the midpoint of the specification (1.05 lbs). If centring alone is insufficient, reducing variation becomes the priority.
 
-If the $Z$ values had been larger, say $Z_U = 4.0$ and $Z_L = 4.5$, the predicted nonconformance would be negligible. A practitioner seeing such numbers would conclude the process is highly capable and might shift effort to other characteristics or consider whether the specifications could be tightened.
+If the $Z$ values had been larger, say $ Z_U = 4.0$ and $ Z_L = 4.5$, the predicted nonconformance would be negligible. A practitioner seeing such numbers would conclude the process is highly capable and might shift effort to other characteristics or consider whether the specifications could be tightened.
 
 ### Worked Example 2: Bearing Diameter
 
-A machine shop produces bearings with a diameter specification of 10.00 mm to 10.40 mm. An $\bar{X}$ and $R$ chart with subgroups of size five is maintained. After 25 subgroups, no special causes are present. The grand average is $\bar{\bar{X}} = 10.22 \text{ mm}$ and the average range is $\bar{R} = 0.12 \text{ mm}$. For $n=5$, $d_2 = 2.326$.
+A machine shop produces bearings with a diameter specification of 10.00 mm to 10.40 mm. An $\bar{X}$ and $ R$ chart with subgroups of size five is maintained. After 25 subgroups, no special causes are present. The grand average is $\bar{\bar{X}} = 10.22 \text{ mm}$ and the average range is $\bar{R} = 0.12 \text{ mm}$. For $ n=5$, $ d_2 = 2.326$.
 
 **Step 1: Estimate standard deviation.**
 
@@ -154,7 +154,7 @@ Z_L = \frac{10.22 - 10.00}{0.0516} \approx \frac{0.22}{0.0516} \approx 4.26
 $$
 
 **Step 3: Tail areas.**  
-From a standard normal table, the area beyond $Z_U = 3.49$ is about $0.00024$ (0.024%). The area beyond $Z_L = 4.26$ is approximately $0.00001$ (0.001%). Total predicted nonconformance is roughly $0.025\%$.
+From a standard normal table, the area beyond $Z_U = 3.49$ is about \$0.00024$ (0.024%). The area beyond $ Z_L = 4.26$ is approximately \$0.00001$ (0.001%). Total predicted nonconformance is roughly \$0.025\%$.
 
 **Step 4: Natural process limits.**
 
@@ -174,9 +174,9 @@ Organisations sometimes set internal specifications that are tighter than the cu
 
 ## Exam Tips
 
-* Always verify that the range chart is in control before interpreting the $\bar{X}$ chart or computing capability metrics. A violation on $R$ means the variation itself is unstable, making any $\hat{\sigma}$ unreliable.
-* Memorise the formula $\hat{\sigma} = \bar{R} / d_2$. On the exam you may be given a table of $d_2$ values corresponding to different subgroup sizes. Be ready to select the correct constant.
+* Always verify that the range chart is in control before interpreting the $\bar{X}$ chart or computing capability metrics. A violation on $ R$ means the variation itself is unstable, making any $\hat{\sigma}$ unreliable.
+* Memorise the formula $\hat{\sigma} = \bar{R} / d_2$. On the exam you may be given a table of $ d_2$ values corresponding to different subgroup sizes. Be ready to select the correct constant.
 * When a process is out of control but still meeting specification (Quadrant 3), resist the temptation to do nothing. The correct answer is to investigate the out-of-control condition, because the process is unpredictable and may later produce defects without warning.
 * If the total percent nonconforming from Z-table tail areas exceeds what the organisation tolerates, immediate actions are centring the process (shift the mean toward the centre of the specification) and then reducing variation. The exam may ask which action to take first.
 * Be able to interpret the relationship between natural process limits and specification limits in plain language. If natural limits are wider than the specification, the process is not capable. If they are narrower, it is capable. This simple comparison often appears in multiple-choice questions.
-* A high Z value (for example $Z \geq 3$) corresponds to a very small tail area; a low Z value (for example $Z \leq 1.5$) indicates a substantial fraction of output outside the specification. Know how to use the standard normal table to convert between Z and tail areas quickly.
+* A high Z value (for example $Z \geq 3$) corresponds to a very small tail area; a low Z value (for example $ Z \leq 1.5$) indicates a substantial fraction of output outside the specification. Know how to use the standard normal table to convert between Z and tail areas quickly.

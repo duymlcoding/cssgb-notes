@@ -15,13 +15,13 @@ The QFD also captures co-relationships among technical features. A positive co-r
 
 ## Modelling Customer Problems as Functions
 
-Every problem that surfaces through VOC data can be expressed as a function: $y = f(x)$. In this statement, $y$ is the output metric tied to customer dissatisfaction, and $x$ represents the inputs or causes that drive that outcome. Often $y$ results from several $x$ variables, making the relationship $y = f(x_1, x_2, \dots)$.
+Every problem that surfaces through VOC data can be expressed as a function: $y = f(x)$. In this statement, $ y$ is the output metric tied to customer dissatisfaction, and $ x$ represents the inputs or causes that drive that outcome. Often $ y$ results from several $ x$ variables, making the relationship $ y = f(x_1, x_2, \dots)$.
 
 Consider an HVAC service provider where customer feedback shows service calls take 1.75 times longer than company averages. The manager researches by observing reps, interviewing customers, and joining calls. Observations reveal two root causes: too much talking (one rep chats with local homeowners, another gives overly detailed explanations) and inadequate training (one new rep struggles with tasks). The problem can now be stated as:
 
 > The extra service time is a function of too much talking and inappropriate training.
 
-This formulation forces the project to focus on controllable $x$ variables instead of blaming the $y$ symptom. Other examples directly tie customer satisfaction to specific inputs: “Low customer satisfaction with hamburger taste is a function of an uncalibrated grill” and “Customer wait times are a function of technology distractions for employees.” Defining the $y=f(x)$ relationship ensures that the team identifies the true customer-impacting causes rather than surface-level complaints.
+This formulation forces the project to focus on controllable $x$ variables instead of blaming the $ y$ symptom. Other examples directly tie customer satisfaction to specific inputs: “Low customer satisfaction with hamburger taste is a function of an uncalibrated grill” and “Customer wait times are a function of technology distractions for employees.” Defining the $ y=f(x)$ relationship ensures that the team identifies the true customer-impacting causes rather than surface-level complaints.
 
 ## Drilling Down with the 5 Whys
 
@@ -32,7 +32,7 @@ A documented example begins with customers rating food quality lower than normal
 ## Exam Tips
 
 - When given a partial QFD matrix, identify which rows represent customer requirements (the “what”) and which columns represent technical requirements (the “how”). The exam often asks you to pick the strongest relationship or interpret co-relationship symbols.
-- For $y=f(x)$ scenarios, you must differentiate the customer-facing output ($y$) from potential causes ($x$). Practice extracting both from a business narrative.
+- For $y=f(x)$ scenarios, you must differentiate the customer-facing output ($ y $) from potential causes ($ x $). Practice extracting both from a business narrative.
 - The 5 Whys on the exam will appear as a short sequence of statements. Follow the logic: each “why” must build on the previous answer, and you should stop when you reach a root cause that directly links to the original customer complaint.
 - Remember that QFD comparisons with competition are used to set strategic improvement targets based on customer importance and gaps.
 - A properly defined $y$ is always expressed in terms of a customer metric, not an internal process metric (for example, “customer wait time” not “server idle time”).

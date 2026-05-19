@@ -58,7 +58,7 @@ The diagram would show "Choose a team" (1 week) on the left. After that, two tas
 
 The total duration is:
 
-$$1 \text{ week} + 1 \text{ week} + 2 \text{ weeks} = 4 \text{ weeks}$$
+$\$1 \text{ week} + 1 \text{ week} + 2 \text{ weeks} = 4 \text{ weeks}$$
 
 Even for complex projects, the critical path method provides a logical, defensible schedule.
 
@@ -76,7 +76,7 @@ Internal milestones can be added within a phase. In the Measure phase, the team 
 
 ## Managing Budgets and Measures of Success
 
-All team members should understand the financial drivers of the project. In some organizations, salary data is restricted, so a Black Belt may need to perform certain cost analyses alone. Still, teams that know the budget can make realistic decisions. An improvement project with a $50,000 budget cannot pursue a solution requiring an $80,000 capital investment. Leaders must have frank discussions with the sponsor about how budgets are calculated, what expenses are tracked, and whether the sponsor can secure additional funding.
+All team members should understand the financial drivers of the project. In some organizations, salary data is restricted, so a Black Belt may need to perform certain cost analyses alone. Still, teams that know the budget can make realistic decisions. An improvement project with a \\$50,000 budget cannot pursue a solution requiring an \\$80,000 capital investment. Leaders must have frank discussions with the sponsor about how budgets are calculated, what expenses are tracked, and whether the sponsor can secure additional funding.
 
 Success must be defined in measurable terms and agreed upon by the team, sponsor, and customer. A well-defined measure of success prevents the project from drifting and ensures all parties evaluate the outcome the same way. Without it, a team might declare victory while leadership considers the effort a failure.
 

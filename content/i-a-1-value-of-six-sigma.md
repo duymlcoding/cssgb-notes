@@ -11,7 +11,7 @@ Six Sigma is a structured and disciplined methodology that delivers consistent, 
 ## How Six Sigma Creates Value
 Six Sigma can be understood through four complementary perspectives, each of which highlights a different source of value.
 
-**Philosophy.** All work occurs in processes that take inputs ($x$) and produce outputs ($y$). The relationship $y = f(x)$ means that controlling the inputs controls the outputs. This view turns every activity into something that can be studied, measured, and systematically improved.
+**Philosophy.** All work occurs in processes that take inputs ($x $) and produce outputs ($ y $). The relationship $ y = f(x)$ means that controlling the inputs controls the outputs. This view turns every activity into something that can be studied, measured, and systematically improved.
 
 **Methodology.** The DMAIC framework (Define, Measure, Analyze, Improve, Control) provides a rigorous road map for problem solving. DMAIC ensures that improvements are based on data, not intuition, and that solutions are sustained over time.
 
@@ -29,7 +29,7 @@ Several threads run through any successful Six Sigma deployment:
 ## Reducing Variation and Its Financial Impact
 Every process contains inherent variation. Uncontrolled variation causes defects, rework, scrap, and inconsistent customer experiences. One pizzeria owner, for example, reduced cheese variation by giving employees measuring cups and then further standardized scooping technique. The result was a more consistent product and fewer complaints.
 
-The financial payoff of reducing variation is nonlinear. Moving a process from a three-sigma level to a four-sigma level can save an organization over $78 million, while the jump from four-sigma to five-sigma saves approximately $7.6 million. Because the cost of poor quality rises exponentially as the sigma level drops, even modest improvements in capability produce large savings. This is why Six Sigma targets a level of performance where defects are measured in single digits per million opportunities, not in percentages.
+The financial payoff of reducing variation is nonlinear. Moving a process from a three-sigma level to a four-sigma level can save an organization over \$78 million, while the jump from four-sigma to five-sigma saves approximately \$7.6 million. Because the cost of poor quality rises exponentially as the sigma level drops, even modest improvements in capability produce large savings. This is why Six Sigma targets a level of performance where defects are measured in single digits per million opportunities, not in percentages.
 
 ## Removing Waste and Streamlining Processes
 Six Sigma practitioners also adopt waste-reduction techniques from Lean. Waste includes any activity, material, or movement that does not add value for the customer. Removing waste directly reduces processing time, opportunities for error, and overall operating cost. For instance, consolidating four sequential assembly steps into one eliminates conveyance waste and shortens cycle time. Lean tools such as value stream mapping make waste visible so a team can methodically eliminate it. Combining Lean with Six Sigma (often called Lean Six Sigma) ensures that processes are both fast and capable.

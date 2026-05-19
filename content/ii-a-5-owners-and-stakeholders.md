@@ -31,8 +31,8 @@ Below is a simple numerical example that applies the method with one customer re
 - Technical requirement A: “Order processing cycle time” shows a strong relationship to delivery speed, assigned a value of 9.
 - Technical requirement B: “Packaging and labeling time” shows a moderate relationship, assigned 3.
 
-The column weight for technical requirement A is: $5 \times 9 = 45$.  
-The column weight for technical requirement B is: $5 \times 3 = 15$.
+The column weight for technical requirement A is: \$5 \times 9 = 45$.  
+The column weight for technical requirement B is: \$5 \times 3 = 15$.
 
 The resulting weights, 45 and 15, quantify the fact that improving order processing cycle time is three times more effective at satisfying the stakeholder demand for fast delivery than improving packaging time alone. When multiple customer requirements exist, the same multiplication is performed for each relationship cell and the products are summed down each column. Teams use these column weights to prioritize technical design efforts, allocate resources, and justify decisions to the process owners and other stakeholders who will sign off on the Define phase tollgate.
 

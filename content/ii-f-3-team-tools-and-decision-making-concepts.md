@@ -77,7 +77,7 @@ Internal milestones break large tasks into manageable pieces, making it easier f
 Team decision-making is also shaped by financial constraints and a shared definition of success.
 
 **Budgets**  
-Team leaders must understand how the organization calculates and monitors project budgets. Some organizations count only direct expenditures such as equipment, software, or new personnel. Others include the cost of team members’ time and implementation training. When all team members are aware of the budget ceiling, they can make realistic improvement decisions. A solution requiring an $80,000 capital investment cannot be chosen if the project budget is $50,000.
+Team leaders must understand how the organization calculates and monitors project budgets. Some organizations count only direct expenditures such as equipment, software, or new personnel. Others include the cost of team members’ time and implementation training. When all team members are aware of the budget ceiling, they can make realistic improvement decisions. A solution requiring an \\$80,000 capital investment cannot be chosen if the project budget is \\$50,000.
 
 **Defined measures of success**  
 A project without a clear, agreed-upon definition of success risks scope creep and stakeholder misalignment. The team must align with the sponsor and customers on exactly what constitutes a successful outcome. A well-defined success measure allows the team to close the project confidently and prevents situations where the team believes the work is finished while leadership considers it a failure.

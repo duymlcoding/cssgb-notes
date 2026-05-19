@@ -28,7 +28,7 @@ A Green Belt uses probability to quantify defect likelihood, predict process yie
 
 ## Compound Events and Venn Diagrams
 
-Compound events are formed by combining two or more simple events. A Venn diagram helps visualize unions (A or B, denoted $A \cup B$) and intersections (A and B, denoted $A \cap B$). The diagram shows how portions of the sample space overlap.
+Compound events are formed by combining two or more simple events. A Venn diagram helps visualize unions (A or B, denoted $A \cup B $) and intersections (A and B, denoted $ A \cap B $). The diagram shows how portions of the sample space overlap.
 
 Relationships among events drive the choice of the correct probability rule.
 
@@ -38,7 +38,7 @@ The probability that an event $A$ does **not** occur is
 
 $$P(\text{not }A) = 1 - P(A)$$
 
-Some texts write the complement as $\sim A$, $A'$, or $\overline{A}$.
+Some texts write the complement as $\sim A $, $ A'$, or $\overline{A}$.
 
 ### Example: Car Starting
 
@@ -50,11 +50,11 @@ $$P(\text{not start}) = 1 - 0.4 = 0.6$$
 
 ## Conditional Probability
 
-Conditional probability measures the chance that event $B$ occurs given that event $A$ has already occurred. The formal definition is
+Conditional probability measures the chance that event $B$ occurs given that event $ A$ has already occurred. The formal definition is
 
 $$P(B|A) = \frac{P(A \cap B)}{P(A)}$$
 
-where $P(A \cap B)$ is the probability that both $A$ and $B$ happen.
+where $P(A \cap B)$ is the probability that both $ A$ and $ B$ happen.
 
 ### Example 1: Drawing Marbles Without Replacement
 
@@ -74,7 +74,7 @@ $$P(\text{Black}_1 \cap \text{Black}_2) = P(\text{Black}_1) \times P(\text{Black
 
 ### Example 2: Die and Conditional
 
-Consider a fair die. Let $A$ be "the outcome is an even number" and $B$ be "the outcome is a 6". Then $P(A) = 3/6 = 0.5$, $P(A \cap B) = 1/6$. The conditional probability
+Consider a fair die. Let $A$ be "the outcome is an even number" and $ B$ be "the outcome is a 6". Then $ P(A) = 3/6 = 0.5$, $ P(A \cap B) = 1/6$. The conditional probability
 
 $$P(B|A) = \frac{P(A \cap B)}{P(A)} = \frac{1/6}{3/6} = \frac{1}{3}$$
 
@@ -82,7 +82,7 @@ $$P(B|A) = \frac{P(A \cap B)}{P(A)} = \frac{1/6}{3/6} = \frac{1}{3}$$
 
 ## Mutually Exclusive Events
 
-Two events are mutually exclusive (disjoint) if they cannot occur at the same time. Formally, $A$ and $B$ are mutually exclusive when
+Two events are mutually exclusive (disjoint) if they cannot occur at the same time. Formally, $A$ and $ B$ are mutually exclusive when
 
 $$P(A \cap B) = 0$$
 
@@ -90,14 +90,14 @@ Equivalently, the addition rule collapses to the special form.
 
 ### Special Addition Rule
 
-For mutually exclusive events $A$ and $B$,
+For mutually exclusive events $A$ and $ B $,
 
 $$P(A \cup B) = P(A) + P(B)$$
 
 ### Example 3: Rolling a Die
 
-Event $A$: rolling a 4 ($P = 1/6$)
-Event $B$: rolling a 6 ($P = 1/6$)
+Event $A $: rolling a 4 ($ P = 1/6$)
+Event $B $: rolling a 6 ($ P = 1/6$)
 
 Since a single die cannot show both 4 and 6, the events are mutually exclusive.
 
@@ -128,13 +128,13 @@ $$P(\text{Machine1} \cup \text{Machine2}) = 0.8 + 0.8 - (0.8 \times 0.8)$$
 Compute:
 
 - $P(\text{Machine1 and Machine2}) = 0.8 \times 0.8 = 0.64$
-- Then $0.8 + 0.8 - 0.64 = 1.6 - 0.64 = 0.96$
+- Then \$0.8 + 0.8 - 0.64 = 1.6 - 0.64 = 0.96$
 
 **Interpretation:** The redundancy yields a 96% chance of at least one machine working. This is a reliability calculation common in process design. If the probability were 0.80 without redundancy, adding a second identical machine raises the probability substantially.
 
 ### Example 6: Overlapping Customer Issues (Pizza Caterer – Relationship Matrix Context)
 
-Take "pizza delivered late" and "pizza not hot enough" from a catering process. They are not mutually exclusive because a late delivery often also leaves the pizza cold. Suppose from data: $P(\text{late}) = 0.25$, $P(\text{not hot}) = 0.20$, and $P(\text{late and not hot}) = 0.12$. Then the probability of either a late delivery or a cold pizza (or both) is
+Take "pizza delivered late" and "pizza not hot enough" from a catering process. They are not mutually exclusive because a late delivery often also leaves the pizza cold. Suppose from data: $P(\text{late}) = 0.25$, $ P(\text{not hot}) = 0.20$, and $ P(\text{late and not hot}) = 0.12$. Then the probability of either a late delivery or a cold pizza (or both) is
 
 $$P(\text{late} \cup \text{not hot}) = 0.25 + 0.20 - 0.12 = 0.33$$
 
@@ -142,7 +142,7 @@ $$P(\text{late} \cup \text{not hot}) = 0.25 + 0.20 - 0.12 = 0.33$$
 
 ## Independence and Multiplication Rules
 
-Two events are independent if the occurrence of one does not change the probability of the other occurring. Statistically, $A$ and $B$ are independent when
+Two events are independent if the occurrence of one does not change the probability of the other occurring. Statistically, $A$ and $ B$ are independent when
 
 $$P(B|A) = P(B)$$
 
@@ -186,13 +186,13 @@ $$P(\text{all three defective}) = \frac{10}{50} \times \frac{9}{49} \times \frac
 
 ## Permutations
 
-A permutation is an ordered arrangement of $n$ distinct objects taken $r$ at a time. The number of permutations, denoted $_n P_r$, is
+A permutation is an ordered arrangement of $n$ distinct objects taken $ r$ at a time. The number of permutations, denoted $_n P_r $, is
 
 $$_n P_r = n \times (n-1) \times (n-2) \times \cdots \times (n - r + 1) = \frac{n!}{(n - r)!}$$
 
 Important factorial values needed for hand calculations:
 
-$$0! = 1, \quad 1! = 1, \quad n! = n \times (n-1) \times \cdots \times 2 \times 1$$
+$\$0! = 1, \quad 1! = 1, \quad n! = n \times (n-1) \times \cdots \times 2 \times 1$$
 
 Also note: $_n P_n = n!$
 
@@ -216,7 +216,7 @@ Why permutations matter: Many Six Sigma statistical tests rely on counting princ
 
 ## Standard Deviation
 
-Standard deviation is the fundamental measure of variation in a process. It is denoted by the Greek letter $\sigma$ for population data and by $s$ for sample data. Standard deviation measures the typical distance between individual data points and the mean; a large standard deviation indicates wide spread, while a small standard deviation indicates tightly clustered points.
+Standard deviation is the fundamental measure of variation in a process. It is denoted by the Greek letter $\sigma$ for population data and by $ s$ for sample data. Standard deviation measures the typical distance between individual data points and the mean; a large standard deviation indicates wide spread, while a small standard deviation indicates tightly clustered points.
 
 Six Sigma uses standard deviation as the yardstick for process capability and control limit calculations. Higher variation means more defect opportunities. Therefore, understanding and reducing standard deviation is a central goal of improvement projects.
 
@@ -231,7 +231,7 @@ where:
 - $N$ = number of data elements in the population
 - $x_i$ = each individual data value
 - $\mu$ = population mean
-- $\sum_{i=1}^{N}$ indicates summation over all $N$ data points
+- $\sum_{i=1}^{N}$ indicates summation over all $ N$ data points
 
 ### Population Example: Test Scores
 
@@ -328,7 +328,7 @@ The following steps create a Pareto chart for denial reasons of medical claims. 
 
 1. Sort the reasons from largest count to smallest.
 2. Add a cumulative count column. The first cell equals the first count. Each subsequent cumulative cell equals the previous cumulative cell plus the current count.
-3. Add a percent column: divide each individual count by the grand total (50123). Use absolute cell reference (`$C$9` for the total) to drag the formula. Format as percentages.
+3. Add a percent column: divide each individual count by the grand total (50123). Use absolute cell reference (`$C\$9` for the total) to drag the formula. Format as percentages.
 4. The resulting table:
 
 | Reason                  | Count  | Cumulative Percent |
@@ -349,10 +349,10 @@ If the Pareto chart showed a flat distribution with many small causes, the team 
 
 ## Exam Tips
 
-- Memorize the exact statements: Mutually exclusive means $P(A \cap B) = 0$; independent means $P(B|A) = P(B)$. Do not confuse the two concepts.
+- Memorize the exact statements: Mutually exclusive means $P(A \cap B) = 0$; independent means $ P(B|A) = P(B)$. Do not confuse the two concepts.
 - When a problem describes events that “cannot happen at the same time,” apply the special addition rule $P(A \cup B) = P(A) + P(B)$.
 - When events do not affect each other’s probabilities, use the special multiplication rule $P(A \cap B) = P(A) \times P(B)$. If the scenario involves replacement, you have independence.
 - The general addition rule $P(A \cup B) = P(A) + P(B) - P(A \cap B)$ is always correct; use it whenever the events are not mutually exclusive.
 - For sampling without replacement, probabilities change after each draw. Calculate dependent events with the general multiplication rule $P(A \cap B) = P(A) \times P(B|A)$.
-- Standard deviation: the denominator is $N$ for population data and $n-1$ for sample data. This distinction appears in capability studies and control chart calculations.
+- Standard deviation: the denominator is $N$ for population data and $ n-1$ for sample data. This distinction appears in capability studies and control chart calculations.
 - The Pareto chart ranks causes by frequency. Use it to separate the vital few from the trivial many before deploying detailed statistical analyses.

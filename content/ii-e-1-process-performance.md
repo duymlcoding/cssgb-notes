@@ -15,9 +15,9 @@ A Six Sigma improvement project begins by defining the current performance of th
 - How the problem is measured (the metric used)
 - The magnitude of the problem, preferably tied to cost
 
-For example, a call center in Jacksonville, Florida handled 36,000 calls in February 2015. Of those calls, 8,000 had an average speed of answer (ASA) over the contract-required 15 seconds. Those 8,000 service-level-agreement violations cost the operation $200,000. This single sentence supplies location, time period, process (answering calls), metric (ASA), and financial impact. It establishes a clear performance gap: 8,000 out of 36,000 calls failed to meet the ASA target.
+For example, a call center in Jacksonville, Florida handled 36,000 calls in February 2015. Of those calls, 8,000 had an average speed of answer (ASA) over the contract-required 15 seconds. Those 8,000 service-level-agreement violations cost the operation \\$200,000. This single sentence supplies location, time period, process (answering calls), metric (ASA), and financial impact. It establishes a clear performance gap: 8,000 out of 36,000 calls failed to meet the ASA target.
 
-Quantifying performance this way matters because it justifies the investment a Six Sigma project requires. A $1.4 million annualized cost, as seen in the distribution center example that reported a 13.8 percent return rate instead of 7 percent, gives leadership a concrete reason to support the initiative. The problem statement also sets the baseline against which the team will measure improvement. Without numbers, the team cannot determine whether the process has moved.
+Quantifying performance this way matters because it justifies the investment a Six Sigma project requires. A \$1.4 million annualized cost, as seen in the distribution center example that reported a 13.8 percent return rate instead of 7 percent, gives leadership a concrete reason to support the initiative. The problem statement also sets the baseline against which the team will measure improvement. Without numbers, the team cannot determine whether the process has moved.
 
 ## Using 5 Whys to Analyze Performance Gaps
 
@@ -41,7 +41,7 @@ A strong problem statement provides enough data to calculate key performance met
 
 - Total calls handled: 36,000
 - Calls exceeding the ASA target: 8,000
-- Cost of violations: $200,000 for the month
+- Cost of violations: \\$200,000 for the month
 
 The defect rate is the ratio of defective calls to total calls. The team computes it as:
 
@@ -49,7 +49,7 @@ $$
 \text{Defect rate} = \frac{\text{Number of calls with ASA} > 15 \text{ seconds}}{\text{Total calls}} = \frac{8,000}{36,000} \approx 0.2222
 $$
 
-Expressed as a percentage, 22.2 percent of calls failed the service level agreement in February 2015. The cost of poor performance that month was $200,000. If the process remains unchanged, the annualized cost exceeds $2.4 million. This numerical analysis turns the problem statement into a precise performance baseline that the project can target for improvement.
+Expressed as a percentage, 22.2 percent of calls failed the service level agreement in February 2015. The cost of poor performance that month was \\$200,000. If the process remains unchanged, the annualized cost exceeds \$2.4 million. This numerical analysis turns the problem statement into a precise performance baseline that the project can target for improvement.
 
 A second example reinforces the analytical step. A Canton, Ohio bakery produced 300,000 loaves of bread in November and December 2014 and received 50,000 complaints about undercooked bread. The complaint rate is:
 
@@ -57,7 +57,7 @@ $$
 \text{Complaint rate} = \frac{50,000}{300,000} \approx 0.1667
 $$
 
-The bakery operated with a 16.7 percent quality failure rate, and the linked costs were estimated at $125,000 per month. In both scenarios, the team moves beyond anecdotal claims and anchors the project in reproducible numbers.
+The bakery operated with a 16.7 percent quality failure rate, and the linked costs were estimated at \\$125,000 per month. In both scenarios, the team moves beyond anecdotal claims and anchors the project in reproducible numbers.
 
 ## Constructing a Problem Statement from Process Observations
 
@@ -69,7 +69,7 @@ When writing a problem statement, approach the task as a journalist would. Use a
 - How is the problem measured?
 - How much is the problem costing (in money, time, customer satisfaction, or another critical metric)?
 
-Draft the statement and then test it by asking a coworker who is not close to the issue to answer those same questions using only the statement. A weak statement, such as “The Ohio call center has a service-level-agreement issue costing about $9,000 per day,” fails because it does not specify when, what process, or the metric. Conversely, the Jacksonville call center statement passes every checklist question. A complete problem statement directly yields an objective statement for the project team.
+Draft the statement and then test it by asking a coworker who is not close to the issue to answer those same questions using only the statement. A weak statement, such as “The Ohio call center has a service-level-agreement issue costing about \\$9,000 per day,” fails because it does not specify when, what process, or the metric. Conversely, the Jacksonville call center statement passes every checklist question. A complete problem statement directly yields an objective statement for the project team.
 
 ## Exam Tips
 
