@@ -24,11 +24,11 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install jupyter-book
-        run: npm install -g jupyterlab-myst mystmd
+      - name: Install mystmd
+        run: npm install -g mystmd
 
       - name: Build site
-        run: jupyter-book build --html
+        run: myst build --html
 
       - uses: actions/upload-pages-artifact@v3
         with:
