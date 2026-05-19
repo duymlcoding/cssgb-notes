@@ -1,0 +1,150 @@
+version: 1
+project:
+  title: "CSSGB Study Notes"
+  description: "Source-grounded study notes for the ASQ Certified Six Sigma Green Belt exam."
+  authors:
+    - name: Thinh Ho
+  license: CC-BY-4.0
+  github: duymlcoding/cssgb-notes
+  numbering:
+    equations: false
+  toc:
+    - file: content/index.md
+
+    - title: "Phase I: Overview — Six Sigma and the Organization"
+      children:
+        - title: "A. Six Sigma and Organizational Goals"
+          children:
+            - file: content/i-a-1-value-of-six-sigma.md
+            - file: content/i-a-2-organizational-goals-and-six-sigma-projects.md
+            - file: content/i-a-3-organizational-drivers-and-metrics.md
+        - title: "B. Lean Principles in the Organization"
+          children:
+            - file: content/i-b-1-lean-concepts.md
+            - file: content/i-b-2-value-stream-mapping.md
+        - title: "C. Design for Six Sigma (DfSS) Methodologies"
+          children:
+            - file: content/i-c-1-road-maps-for-dfss.md
+            - file: content/i-c-2-basic-failure-mode-and-effects-analysis-fmea.md
+            - file: content/i-c-3-design-fmea-and-process-fmea.md
+
+    - title: "Phase II: Define"
+      children:
+        - title: "A. Project Identification"
+          children:
+            - file: content/ii-a-1-project-selection.md
+            - file: content/ii-a-2-process-elements.md
+            - file: content/ii-a-3-benchmarking.md
+            - file: content/ii-a-4-process-input-and-outputs.md
+            - file: content/ii-a-5-owners-and-stakeholders.md
+        - title: "B. Voice of the Customer (VoC)"
+          children:
+            - file: content/ii-b-1-customer-identification.md
+            - file: content/ii-b-2-customer-data.md
+            - file: content/ii-b-3-customer-requirements.md
+        - title: "C. Project Management Basics"
+          children:
+            - file: content/ii-c-1-project-methodology.md
+            - file: content/ii-c-2-project-charter.md
+            - file: content/ii-c-3-project-scope.md
+            - file: content/ii-c-4-project-metrics.md
+            - file: content/ii-c-5-project-planning-tools.md
+            - file: content/ii-c-6-project-documentation.md
+            - file: content/ii-c-7-project-risk-analysis-and-management.md
+            - file: content/ii-c-8-project-closure.md
+        - title: "D. Management and Planning Tools"
+          children:
+            - file: content/ii-d-management-and-planning-tools.md
+        - title: "E. Business Results for Projects"
+          children:
+            - file: content/ii-e-1-process-performance.md
+            - file: content/ii-e-2-communication.md
+        - title: "F. Team Dynamics and Performance"
+          children:
+            - file: content/ii-f-1-team-stages-and-dynamics.md
+            - file: content/ii-f-2-team-roles-and-responsibilities.md
+            - file: content/ii-f-3-team-tools-and-decision-making-concepts.md
+            - file: content/ii-f-4-team-communication.md
+
+    - title: "Phase III: Measure"
+      children:
+        - title: "A. Process Analysis and Documentation"
+          children:
+            - file: content/iii-a-process-analysis-and-documentation.md
+        - title: "B. Probability and Statistics"
+          children:
+            - file: content/iii-b-1-basic-probability-concepts.md
+            - file: content/iii-b-2-central-limit-theorem.md
+        - title: "C. Statistical Distributions"
+          children:
+            - file: content/iii-c-statistical-distributions.md
+        - title: "D. Collecting and Summarizing Data"
+          children:
+            - file: content/iii-d-1-types-of-data-and-measurement-scales.md
+            - file: content/iii-d-2-sampling-and-data-collection-plans-and-methods.md
+            - file: content/iii-d-3-descriptive-statistics.md
+            - file: content/iii-d-4-graphical-methods.md
+        - title: "E. Measurement System Analysis (MSA)"
+          children:
+            - file: content/iii-e-measurement-system-analysis-msa.md
+        - title: "F. Process and Performance Capability"
+          children:
+            - file: content/iii-f-1-process-performance-vs-process-specifications.md
+            - file: content/iii-f-2-process-capability-studies.md
+            - file: content/iii-f-3-process-capability-cp-cpk-and-performance-pp-ppk-indices.md
+            - file: content/iii-f-4-short-term-vs-long-term-capability-and-sigma-shift.md
+
+    - title: "Phase IV: Analyze"
+      children:
+        - title: "A. Exploratory Data Analysis"
+          children:
+            - file: content/iv-a-1-multi-vari-studies.md
+            - file: content/iv-a-2-correlation-and-linear-regression.md
+        - title: "B. Hypothesis Testing"
+          children:
+            - file: content/iv-b-1-hypothesis-testing-basics.md
+            - file: content/iv-b-2-tests-for-means-variances-and-proportions.md
+        - title: "C. Root Cause Analysis"
+          children:
+            - file: content/iv-c-1-gap-analysis.md
+            - file: content/iv-c-2-root-cause-analysis.md
+
+    - title: "Phase V: Improve"
+      children:
+        - title: "A. Design of Experiments (DoE)"
+          children:
+            - file: content/v-a-1-doe-basic-terms.md
+            - file: content/v-a-2-doe-graphs-and-plots.md
+        - title: "B. Implementation"
+          children:
+            - file: content/v-b-implementation-planning.md
+        - title: "C. Lean Methods"
+          children:
+            - file: content/v-c-1-waste-elimination.md
+            - file: content/v-c-2-cycle-time-reduction.md
+            - file: content/v-c-3-kaizen-and-kaizen-blitz.md
+
+    - title: "Phase VI: Control"
+      children:
+        - title: "A. Statistical Process Control (SPC)"
+          children:
+            - file: content/vi-a-1-spc-basics.md
+            - file: content/vi-a-2-rational-subgrouping.md
+            - file: content/vi-a-3-control-charts.md
+        - title: "B. Control Plan"
+          children:
+            - file: content/vi-b-1-control-plan.md
+            - file: content/vi-b-2-document-control.md
+            - file: content/vi-b-3-training-plans.md
+            - file: content/vi-b-4-audits.md
+            - file: content/vi-b-5-plan-do-check-act-pdca.md
+        - title: "C. Maintain Controls"
+          children:
+            - file: content/vi-c-1-total-productive-maintenance-tpm.md
+            - file: content/vi-c-2-visual-factory.md
+
+site:
+  template: book-theme
+  options:
+    logo_text: "CSSGB Study Notes"
+    hide_authors: false
