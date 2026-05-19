@@ -331,27 +331,45 @@ Where
 - $s_d$ = standard deviation of the differences  
 - $n$ = number of pairs (differences), $ df = n-1$
 
-### Example 10: Equipment Calibration – Before and After
+### Example 10: Equipment Calibration — Before and After
 
-An operator measured the same five parts before and after calibration. Differences (After − Before) from the handbook:
+An operator measured the same five parts before and after calibration. Differences (After minus Before):
 
-Parts differences: 0.014, 0.027, 0.010, 0.010, 0.002
+| Part | 1 | 2 | 3 | 4 | 5 |
+|------|-------|-------|-------|-------|-------|
+| Difference | 0.014 | 0.027 | 0.010 | 0.010 | 0.002 |
 
-$\bar{d} = (0.014+0.027+0.010+0.010+0.002)/5 = 0.063/5 = 0.0126$
-
-Compute $s_d $: deviations: -0.0014, 0.0144, -0.0026, -0.0026, -0.0106. Squared deviations: 1.96e-6, 2.0736e-4, 6.76e-6, 6.76e-6, 1.1236e-4. Sum = 3.3784e-4. Variance $ s_d^2 = 3.3784e-4 / 4 = 8.446e-5$. $ s_d = 0.00919$.
-
-Test statistic:
+**Step 1 — Mean difference:**
 
 $$
-t = \frac{0.0126}{0.00919 / \sqrt{5}} = \frac{0.0126}{0.00919 / 2.236} = \frac{0.0126}{0.00411} \approx 3.08
+\bar{d} = \frac{0.014 + 0.027 + 0.010 + 0.010 + 0.002}{5} = \frac{0.063}{5} = 0.0126
 $$
 
-$df = 4$. For a two-tailed test at $\alpha = 0.05$, $t_{0.025,4} = 2.776$. Since $3.08 > 2.776$, reject $H_0: \mu_d = 0$.
+**Step 2 — Standard deviation of differences:**
 
-Conclusion: Calibration produced a statistically significant difference in measurements. The 95% confidence interval for the mean difference does not include 0 (0.00123 to 0.02397), confirming the result.
+Each deviation $(d_i - \bar{d})$ and its square:
 
-If the t-statistic had been below the critical value, the team would conclude that calibration did not produce a detectable change, and further investigation into measurement system adequacy would be warranted.
+| $d_i$ | $d_i - \bar{d}$ | $(d_i - \bar{d})^2$ |
+|--------|-----------------|----------------------|
+| 0.014 | -0.0014 | $1.96 \times 10^{-6}$ |
+| 0.027 | +0.0144 | $2.0736 \times 10^{-4}$ |
+| 0.010 | -0.0026 | $6.76 \times 10^{-6}$ |
+| 0.010 | -0.0026 | $6.76 \times 10^{-6}$ |
+| 0.002 | -0.0106 | $1.1236 \times 10^{-4}$ |
+
+$$
+s_d^2 = \frac{3.3784 \times 10^{-4}}{4} = 8.446 \times 10^{-5} \qquad s_d = 0.00919
+$$
+
+**Step 3 — Test statistic** ($df = n - 1 = 4$):
+
+$$
+t = \frac{\bar{d}}{s_d / \sqrt{n}} = \frac{0.0126}{0.00919 / \sqrt{5}} = \frac{0.0126}{0.00411} \approx 3.08
+$$
+
+**Step 4 — Decision:** For a two-tailed test at $\alpha = 0.05$ with $df = 4$, the critical value is $t_{0.025,\,4} = 2.776$. Since $3.08 > 2.776$, reject $H_0: \mu_d = 0$.
+
+**Conclusion:** Calibration produced a statistically significant shift in measurements. The 95% confidence interval for the mean difference is (0.00123, 0.02397), which does not include 0, confirming the result. If the t-statistic had been below the critical value, the team would conclude that calibration produced no detectable change and would investigate measurement system adequacy further.
 
 ### F-Test for Equality of Two Variances
 
