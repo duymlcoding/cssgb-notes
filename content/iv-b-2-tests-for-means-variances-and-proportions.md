@@ -34,7 +34,7 @@ The procedure, as listed in the CSSGB Handbook, is:
 
 ### Example 1: Home Shopping Channel – 95% Confidence Interval
 
-From a sample of $n = 32$ customers, the average order is $\bar{X} = $78.25$, and the population standard deviation is $\sigma = $37.50$. Compute the 95% confidence interval for the population mean.
+From a sample of $n = 32$ customers, the average order is $\bar{X} = 78.25$ dollars, and the population standard deviation is $\sigma = 37.50$ dollars. Compute the 95% confidence interval for the population mean.
 
 $Z_{0.025} = 1.96$ (for a 95% two-sided interval).
 
@@ -50,7 +50,7 @@ $$
 78.25 \pm 13.00 \;\Rightarrow\; (65.25,\; 91.25)
 $$
 
-Interpretation: We are 95% confident that the true average order amount falls between $65.25$ and $91.25$.
+Interpretation: We are 95% confident that the true average order amount falls between 65.25 and 91.25 dollars.
 
 If the calculated interval had not captured the hypothesized value that management was testing, the practitioner would reject the null hypothesis and conclude that the population mean differs from that value.
 
