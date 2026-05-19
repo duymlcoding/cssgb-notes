@@ -11,127 +11,234 @@ Statistical Process Control (SPC) charts serve as the primary tool to monitor pr
 
 Variables data provide richer insight because they reveal trends and patterns. Always analyze the range (or standard deviation) chart first to assess process variation, then examine the averages chart for shifts in central tendency.
 
-### X-bar and s Chart
+### X-bar and R Chart
 
-When subgroup sizes exceed 10, the X-bar chart for averages and the s chart for standard deviation produce more sensitive signals than the X-bar and R chart.
+The most common variables chart pair for subgroup sizes of 2 to 10. The R chart monitors within-subgroup spread; the X-bar chart monitors subgroup averages.
 
 **Construction steps:**
-- Collect at least 25 subgroups of constant size.
-- Compute the subgroup mean (X-bar) and sample standard deviation (s) for each.
-- Calculate the overall mean of subgroup means (X-double bar) and the average standard deviation (s-bar).
-- Select constants A₃, B₃, and B₄ from standard tables based on subgroup size.
+1. Collect at least 25 subgroups of constant size $n$.
+2. Compute the subgroup mean $\bar{X}_i$ and range $R_i = X_{\max} - X_{\min}$ for each subgroup.
+3. Compute the grand mean $\bar{\bar{X}}$ and average range $\bar{R}$.
+4. Look up constants $A_2$, $D_3$, $D_4$ from the standard table for your subgroup size $n$.
 
-**Control limit formulas:**
-- For the averages chart: UCL<sub>X-bar</sub> = X-double bar + A₃ × s-bar; LCL<sub>X-bar</sub> = X-double bar – A₃ × s-bar.
-- For the standard deviation chart: UCL<sub>s</sub> = B₄ × s-bar; LCL<sub>s</sub> = B₃ × s-bar (B₃ may be zero for small n).
+**Control limit formulas — R chart (analyze first):**
 
-**Example:** With X-double bar = 7.126, s-bar = 0.0020, n = 5, A₃ = 1.628, B₄ = 2.266, B₃ = 0, UCL<sub>X-bar</sub> ≈ 7.129, LCL<sub>X-bar</sub> ≈ 7.123; UCL<sub>s</sub> ≈ 0.005, LCL<sub>s</sub> = 0.
+$$
+UCL_R = D_4 \bar{R} \qquad LCL_R = D_3 \bar{R}
+$$
+
+**Control limit formulas — X-bar chart:**
+
+$$
+UCL_{\bar{X}} = \bar{\bar{X}} + A_2 \bar{R} \qquad LCL_{\bar{X}} = \bar{\bar{X}} - A_2 \bar{R}
+$$
+
+> $D_3 = 0$ for $n \leq 6$, so the LCL of the R chart is zero for small subgroups.
+
+### X-bar and s Chart
+
+When subgroup sizes exceed 10, the s chart (using sample standard deviation) is more sensitive than the R chart.
+
+**Construction steps:**
+1. Compute the subgroup mean $\bar{X}_i$ and sample standard deviation $s_i$ for each subgroup.
+2. Compute $\bar{\bar{X}}$ (grand mean) and $\bar{s}$ (average standard deviation).
+3. Look up constants $A_3$, $B_3$, $B_4$ for your subgroup size $n$.
+
+**Control limit formulas — s chart:**
+
+$$
+UCL_s = B_4 \bar{s} \qquad LCL_s = B_3 \bar{s}
+$$
+
+**Control limit formulas — X-bar chart:**
+
+$$
+UCL_{\bar{X}} = \bar{\bar{X}} + A_3 \bar{s} \qquad LCL_{\bar{X}} = \bar{\bar{X}} - A_3 \bar{s}
+$$
+
+**Example:** $\bar{\bar{X}} = 7.126$, $\bar{s} = 0.0020$, $n = 5$, $A_3 = 1.628$, $B_4 = 2.266$, $B_3 = 0$:
+
+$$
+UCL_{\bar{X}} = 7.126 + 1.628 \times 0.0020 = 7.129 \qquad LCL_{\bar{X}} = 7.126 - 1.628 \times 0.0020 = 7.123
+$$
+
+$$
+UCL_s = 2.266 \times 0.0020 = 0.005 \qquad LCL_s = 0
+$$
 
 ### Individuals and Moving Range (ImR) Chart
 
-Use the ImR chart when the rational subgroup size is one (for example, destructive testing or slow production). The moving range is the absolute difference between consecutive individual measurements.
+Use when rational subgroup size is one (destructive testing, slow production, or batch processes). The moving range is the absolute difference between consecutive measurements.
 
-**Control limit formulas:**
-- UCL<sub>X</sub> = X-bar + E₂ × R-bar; LCL<sub>X</sub> = X-bar – E₂ × R-bar
-- UCL<sub>MR</sub> = D₄ × R-bar; LCL<sub>MR</sub> = D₃ × R-bar (often zero)
-Here, constants E₂, D₃, and D₄ correspond to a sample size of 2 because each moving range compares two successive values.
+$$
+MR_i = |X_i - X_{i-1}|
+$$
 
-**Example:** For individual measurements averaging 288.3 with an average moving range of 2.889, E₂ = 2.660 gives UCL<sub>X</sub> ≈ 296 and LCL<sub>X</sub> ≈ 280.6; UCL<sub>MR</sub> ≈ 9.44, LCL<sub>MR</sub> = 0.
+**Control limit formulas — MR chart:**
+
+$$
+UCL_{MR} = D_4 \bar{R} \qquad LCL_{MR} = D_3 \bar{R}
+$$
+
+**Control limit formulas — Individuals chart:**
+
+$$
+UCL_X = \bar{X} + E_2 \bar{R} \qquad LCL_X = \bar{X} - E_2 \bar{R}
+$$
+
+Constants $E_2$, $D_3$, $D_4$ correspond to $n = 2$ because each moving range compares two successive values. Typical values: $E_2 = 2.660$, $D_4 = 3.267$, $D_3 = 0$.
+
+**Example:** $\bar{X} = 288.3$, $\bar{R} = 2.889$, $E_2 = 2.660$, $D_4 = 3.267$:
+
+$$
+UCL_X = 288.3 + 2.660 \times 2.889 \approx 296.0 \qquad LCL_X = 288.3 - 2.660 \times 2.889 \approx 280.6
+$$
+
+$$
+UCL_{MR} = 3.267 \times 2.889 \approx 9.44 \qquad LCL_{MR} = 0
+$$
 
 ### Median Chart
 
-When outliers are a concern, plot the sample median instead of the average. All individual data points appear on the chart, and the user connects the middle point of each sample. A physical range gage, cut to the distance between range control limits, is placed over the plotted points. If the gage cannot cover all points in a subgroup, the range exceeds the control limit. Trends in variation are harder to detect visually with this chart.
+When outliers are a concern, plot the sample median instead of the average. All individual data points appear on the chart; the user connects the middle point of each sample. A physical range gage cut to the distance between range control limits is placed over the plotted points.
 
 **Control limit formulas:**
-- UCL<sub>med</sub> = X-tilde' + A'₂ × R-bar; LCL<sub>med</sub> = X-tilde' – A'₂ × R-bar
-- UCL<sub>R</sub> = D₄ × R-bar; LCL<sub>R</sub> = D₃ × R-bar (often zero)
-A'₂ is a special constant for medians.
+
+$$
+UCL_{\tilde{X}} = \tilde{X}' + A'_2 \bar{R} \qquad LCL_{\tilde{X}} = \tilde{X}' - A'_2 \bar{R}
+$$
+
+$$
+UCL_R = D_4 \bar{R} \qquad LCL_R = D_3 \bar{R}
+$$
+
+$A'_2$ is a special constant for medians from the standard table.
+
+---
 
 ## Attributes Control Charts
 
-Attributes charts handle count data: defectives (conforming/nonconforming items) or defects (multiple flaws per unit). They require larger sample sizes (50 to 200) to fit binomial or Poisson distributions. Simplicity is offset by the increased sample volume needed for equivalent sensitivity.
+Attributes charts handle count data: defectives (nonconforming items) or defects (multiple flaws per unit). They require larger sample sizes (50 to 200) to fit binomial or Poisson distributions.
 
-### p-Chart (Proportion Defective, Varying Sample Size)
+| Chart | Data type | Sample size | Distribution |
+|-------|-----------|-------------|--------------|
+| p | Proportion defective | Varying | Binomial |
+| np | Count defective | Fixed | Binomial |
+| c | Count of defects | Fixed area | Poisson |
+| u | Defects per unit | Varying | Poisson |
 
-For binary classification of each item. Plot the fraction defective p = (number of defectives) / n.
+### p-Chart (Proportion Defective)
 
-**Control limits using average sample size n-bar:**
-- p-bar = total defectives / total inspected
-- UCL<sub>p</sub> = p-bar + 3 × √[p-bar (1 – p-bar) / n-bar]
-- LCL<sub>p</sub> = p-bar – 3 × √[p-bar (1 – p-bar) / n-bar] (set to 0 if negative)
+Plot the fraction defective $p_i = d_i / n_i$ for each subgroup.
 
-When a sample size deviates more than 25% from n-bar, recalculate limits for that subgroup according to AIAG guidance.
+$$
+\bar{p} = \frac{\text{total defectives}}{\text{total inspected}}
+$$
+
+**Control limits (using average sample size $\bar{n}$):**
+
+$$
+UCL_p = \bar{p} + 3\sqrt{\frac{\bar{p}(1 - \bar{p})}{\bar{n}}} \qquad LCL_p = \bar{p} - 3\sqrt{\frac{\bar{p}(1 - \bar{p})}{\bar{n}}}
+$$
+
+Set $LCL_p = 0$ if the formula yields a negative number. Recalculate individual limits when a subgroup size deviates more than 25% from $\bar{n}$.
 
 ### np-Chart (Number Defective, Fixed Sample Size)
 
-When sample size remains constant, plotting the count of defectives is often more straightforward.
+Use when sample size $n$ is constant. Plot the count of defectives directly.
 
-**Formulas:**
-- np-bar = total defectives / number of subgroups
-- UCL = np-bar + 3 × √[np-bar × (1 – np-bar / n)]
-- LCL = np-bar – 3 × √[np-bar × (1 – np-bar / n)] (set to 0 if negative)
+$$
+\overline{np} = \frac{\text{total defectives}}{\text{number of subgroups}}
+$$
 
-### c-Chart (Number of Defects, Constant Sample Size)
+**Control limits:**
 
-Use when the area of opportunity is fixed and each unit can have multiple defects. Count total defects per subgroup.
+$$
+UCL_{np} = \overline{np} + 3\sqrt{\overline{np}\left(1 - \frac{\overline{np}}{n}\right)} \qquad LCL_{np} = \overline{np} - 3\sqrt{\overline{np}\left(1 - \frac{\overline{np}}{n}\right)}
+$$
 
-**Formulas:**
-- c-bar = total defects / number of subgroups
-- UCL = c-bar + 3 × √c-bar
-- LCL = c-bar – 3 × √c-bar (set to 0 if negative)
+### c-Chart (Count of Defects, Fixed Area of Opportunity)
+
+Use when the area of opportunity is fixed and each unit can have multiple defects.
+
+$$
+\bar{c} = \frac{\text{total defects}}{\text{number of subgroups}}
+$$
+
+**Control limits:**
+
+$$
+UCL_c = \bar{c} + 3\sqrt{\bar{c}} \qquad LCL_c = \bar{c} - 3\sqrt{\bar{c}}
+$$
 
 ### u-Chart (Defects per Unit, Varying Sample Size)
 
-For varying subgroup sizes, plot u = defects per unit.
+Plot $u_i = c_i / n_i$ (defects per unit) when subgroup sizes vary.
 
-**Control limits using average sample size n-bar:**
-- u-bar = total defects / total units inspected
-- UCL<sub>u</sub> = u-bar + 3 × √(u-bar / n-bar)
-- LCL<sub>u</sub> = u-bar – 3 × √(u-bar / n-bar) (set to 0 if negative)
+$$
+\bar{u} = \frac{\text{total defects}}{\text{total units inspected}}
+$$
 
-Recalculate limits when the sample size differs more than 25% from n-bar.
+**Control limits (using average sample size $\bar{n}$):**
+
+$$
+UCL_u = \bar{u} + 3\sqrt{\frac{\bar{u}}{\bar{n}}} \qquad LCL_u = \bar{u} - 3\sqrt{\frac{\bar{u}}{\bar{n}}}
+$$
+
+Recalculate limits when a subgroup size differs more than 25% from $\bar{n}$.
+
+---
 
 ## Interpreting Control Charts
 
-Begin by analyzing the range section for variables charts. A rise in range indicates increased variation within subgroups, possibly from worn bearings, loose fixtures, or inconsistent operator technique. Then examine the averages chart for shifts caused by tool wear, material changes, or altered machine settings.
+Begin by analyzing the range (or s, or MR) chart. A rise in spread indicates increased within-subgroup variation from worn tooling, loose fixtures, or inconsistent technique. Then examine the averages chart for shifts caused by tool wear, material changes, or machine settings.
 
-**Basic out-of-control signals (from the CSSGB Handbook):**
-- A point above UCL or below LCL (special).
+**Basic out-of-control signals (ASQ CSSGB Handbook):**
+- A point above UCL or below LCL.
 - Run violation: seven or more consecutive points on one side of the centerline.
-- 1-in-20 violation: more than one point in 20 falls in the outer third of the control limits region.
-- Trend violation: five or more consecutive points increasing or decreasing, or a drift of seven or more points.
+- 1-in-20 violation: more than one point in 20 in the outer third of the control region.
+- Trend violation: five or more consecutive points increasing or decreasing.
 
-**Minitab's eight rules (consistent with the CSSC training tests):**
-1. One point more than 3 standard deviations from the centerline (either side).
-2. Nine points in a row on the same side of the centerline.
-3. Six points in a row all increasing or all decreasing.
-4. Fourteen points in a row alternating up and down.
-5. Two out of three points more than 2 standard deviations from the centerline (same side).
-6. Four out of five points more than 1 standard deviation from the centerline (same side).
-7. Fifteen points in a row within 1 standard deviation of the centerline (either side).
-8. Eight points in a row more than 1 standard deviation from the centerline (either side).
+**Minitab's eight rules (Western Electric rules):**
 
-These correspond to the zones C (within ±1s), B (between 1s and 2s), and A (between 2s and 3s) on either side of the centerline.
+| Rule | Signal |
+|------|--------|
+| 1 | 1 point beyond ±3σ (Zone A) |
+| 2 | 9 consecutive points on one side of centerline |
+| 3 | 6 consecutive points all increasing or all decreasing |
+| 4 | 14 consecutive points alternating up and down |
+| 5 | 2 of 3 consecutive points beyond ±2σ (Zone B, same side) |
+| 6 | 4 of 5 consecutive points beyond ±1σ (Zone C, same side) |
+| 7 | 15 consecutive points within ±1σ (Zone C, either side) |
+| 8 | 8 consecutive points beyond ±1σ (either side, no points in Zone C) |
 
-**AIAG's six supplementary rules:**
-- Points beyond the control limits.
+Zones: C = within ±1σ, B = between 1σ and 2σ, A = between 2σ and 3σ.
+
+**AIAG supplementary rules:**
+- Points beyond control limits.
 - Seven consecutive points on one side of the average.
 - Seven consecutive points consistently increasing or decreasing.
-- Over 90% of plotted points in the middle third of the control limit region (for 25 or more subgroups).
-- Fewer than 40% of plotted points in the middle third.
-- Obvious nonrandom patterns (cycles, etc.).
+- Over 90% of points in the middle third of the control region (25+ subgroups).
+- Fewer than 40% of points in the middle third.
+- Obvious nonrandom patterns (cycles, sawtooth, etc.).
 
-Points that violate a rule are circled and investigated. Special causes should be confirmed via the process log or direct observation. Adjusting a stable process based on a single point near the target increases variation and destabilizes the process, a type II error where the hypothesis of a process change is accepted incorrectly. When an out-of-control condition is traced to a special cause, those points are excluded before recalculating tighter control limits. Conversely, a sustained improvement that pulls points close to the centerline without near-limit excursions should be preserved by standardising the change.
+Points violating a rule are circled and investigated via the process log. Adjusting a stable process based on a single point near the target increases variation (tampering). When an out-of-control point is traced to a confirmed special cause, exclude those points and recalculate tighter control limits.
 
 ## Control Versus Capability
 
-A process in statistical control is stable; its variation is predictable. That does not guarantee it meets customer specifications. Control limits are derived from process data (±3 standard deviations from the process average). Specification limits (USL, LSL) reflect customer requirements. A process can be in control but still produce output outside the specification range. Process capability (Cpk) quantifies this relationship: the sigma level is the number of standard deviations between the process center and the nearest specification limit, and Cpk is that sigma level divided by 3. A Cpk of 1.33 corresponds to 4-sigma performance, a widely accepted minimum. SPC charts must be monitored with both control and specification limits in mind.
+A process in statistical control is stable but that does not guarantee it meets specifications. Control limits come from the process itself ($\pm 3\sigma$ from the process mean). Specification limits come from customer requirements.
+
+$$
+C_{pk} = \min\left(\frac{USL - \bar{X}}{3\hat{\sigma}},\; \frac{\bar{X} - LSL}{3\hat{\sigma}}\right)
+$$
+
+A $C_{pk}$ of 1.33 corresponds to 4-sigma performance and is the widely accepted minimum. Monitor SPC charts with both sets of limits in mind: a process can be in control yet still be incapable of meeting customer requirements.
 
 ## Exam Tips
 
-- Given subgroup data, choose the correct chart type based on data type and sample size (variables with n > 10: X-bar and s; n = 1: ImR; attribute defectives constant n: np; attributes defects constant area: c; varying sample size: p or u).
-- Compute control limits from the provided formulas and constants; always set LCL to zero when the calculation yields a negative number.
-- Identify out-of-control conditions using the specific run, trend, and zone rules; know the difference between Minitab’s eight rules and AIAG’s additional rules about middle-third percentages.
-- Interpret a control chart by examining the variation chart first, then the location chart; link chart signals to possible process causes such as tool wear, material changes, or measurement issues.
-- Distinguish between control limits and specification limits; recognize that a controlled process may still be incapable of meeting customer requirements, and calculate sigma level or Cpk when given USL, LSL, and process standard deviation.
-- Apply the 25% rule for recalculating p-chart or u-chart limits when a subgroup size differs from the average sample size by more than 25%.
+- Choose chart type by data type and subgroup size: variables with $n > 10$ use X-bar and s; $n = 1$ uses ImR; attribute defectives with constant $n$ use np; attribute defects with constant area use c; varying sample size uses p or u.
+- Always analyze the variation chart (R, s, or MR) before the location chart (X-bar).
+- Set LCL to zero whenever the formula yields a negative value.
+- Know the 25% rule: recalculate p-chart or u-chart limits individually when a subgroup size deviates more than 25% from $\bar{n}$.
+- Distinguish Minitab's 8 rules from AIAG's 6 rules; know the zone definitions (A, B, C).
+- Distinguish control limits from specification limits: a controlled process may still be incapable — compute $C_{pk}$ to assess capability.
