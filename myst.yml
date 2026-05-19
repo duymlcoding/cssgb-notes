@@ -145,6 +145,8 @@ project:
 
 site:
   template: book-theme
+  url: https://duymlcoding.github.io
+  baseurl: /cssgb-notes
   options:
     logo_text: "CSSGB Study Notes"
     hide_authors: false
