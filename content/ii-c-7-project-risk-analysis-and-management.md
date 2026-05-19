@@ -17,7 +17,7 @@ For each criterion the team assigns a rating from 1 (No) to 5 (Yes). The weight 
 
 ### Full Numerical Example
 
-Using the same weights and ratings shown in the table on page 105 of the CSSC Training Manual, the computation proceeds as follows.
+Using the same weights and ratings shown in the table on page 105 of the CSSC Training Manual, the computation proceeds as follows.
 
 | Criterion | Weight | No (1) | Mostly No (2) | Possibly (3) | Mostly Yes (4) | Yes (5) |
 |---|---|---|---|---|---|---|
@@ -54,7 +54,7 @@ $$1.3 + 8.8 + 14.1 + 13.2 + 22.0 = 59.4$$
 
 $$1.3 + 4.4 + 4.7 + 3.3 + 4.4 = 18.1$$
 
-**Step 4:** Divide the sum from Step 2 by the sum from Step 3 to obtain the project score:
+**Step 4:** Divide the sum from Step 2 by the sum from Step 3 to obtain the project score:
 
 $$\frac{59.4}{18.1} = 3.28$$
 

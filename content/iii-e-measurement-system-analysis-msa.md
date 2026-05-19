@@ -41,13 +41,13 @@ Measurement system analysis (MSA) examines the variation present in measurement 
 
 6. **Compute intermediate statistics.**  
    - Row 16 (Part Average): average the three trials for each appraiser on each part.  
-   - Row 17 (\( \overline{\overline{R}} \)): average the ranges (\( R_a, R_b, R_c \)) across appraisers.  
-   - Row 18 (\( \overline{X}_{\text{DIFF}} \)): difference between the largest and smallest appraiser average (\( \overline{X} \)).  
-   - Row 19 (\( \text{UCL}_R \)): upper control limit for the ranges using \( \text{UCL}_R = \overline{\overline{R}} \times D_4 \), where \( D_4 = 3.27 \) for two trials and \( 2.58 \) for three trials. Circle any individual \( R \) value that exceeds this limit, investigate the cause, and if necessary repeat those readings.
+   - Row 17 ($ \overline{\overline{R}} $): average the ranges ($ R_a, R_b, R_c $) across appraisers.  
+   - Row 18 ($ \overline{X}_{\text{DIFF}} $): difference between the largest and smallest appraiser average ($ \overline{X} $).  
+   - Row 19 ($ \text{UCL}_R $): upper control limit for the ranges using $ \text{UCL}_R = \overline{\overline{R}} \times D_4 $, where $ D_4 = 3.27 $ for two trials and $ 2.58 $ for three trials. Circle any individual $ R $ value that exceeds this limit, investigate the cause, and if necessary repeat those readings.
 
 ## GR&R Report and Calculation Formulas
 
-The AIAG Gage Repeatability and Reproducibility Report (Figures 14.5 and 14.6) partitions total variation into equipment variation (EV), appraiser variation (AV), part variation (PV), and total variation (TV). Constants \( K_1, K_2, K_3 \) depend on the number of trials, appraisers, and parts.
+The AIAG Gage Repeatability and Reproducibility Report (Figures 14.5 and 14.6) partitions total variation into equipment variation (EV), appraiser variation (AV), part variation (PV), and total variation (TV). Constants $ K_1, K_2, K_3 $ depend on the number of trials, appraisers, and parts.
 
 ### Formulas in Display Math
 
@@ -55,16 +55,16 @@ The AIAG Gage Repeatability and Reproducibility Report (Figures 14.5 and 14.6) p
 $$
 EV = \overline{\overline{R}} \times K_1
 $$
-\( \overline{\overline{R}} \): average range across all appraisers.  
-\( K_1 \): 0.8862 for 2 trials; 0.5908 for 3 trials.
+$ \overline{\overline{R}} $: average range across all appraisers.  
+$ K_1 $: 0.8862 for 2 trials; 0.5908 for 3 trials.
 
 **Appraiser Variation (AV)**  
 $$
 AV = \sqrt{ \left( \overline{X}_{\text{DIFF}} \times K_2 \right)^2 - \frac{EV^2}{n \times r} }
 $$
-\( \overline{X}_{\text{DIFF}} \): range of appraiser averages.  
-\( K_2 \): 0.7071 for 2 appraisers; 0.5231 for 3 appraisers.  
-\( n \): number of parts. \( r \): number of trials.
+$ \overline{X}_{\text{DIFF}} $: range of appraiser averages.  
+$ K_2 $: 0.7071 for 2 appraisers; 0.5231 for 3 appraisers.  
+$ n $: number of parts. $ r $: number of trials.
 
 **Gage R&R (GRR)**  
 $$
@@ -75,8 +75,8 @@ $$
 $$
 PV = R_p \times K_3
 $$
-\( R_p \): range of part averages.  
-\( K_3 \) depends on the number of parts (excerpts):  
+$ R_p $: range of part averages.  
+$ K_3 $ depends on the number of parts (excerpts):  
 - 2 parts: 0.7071  
 - 3 parts: 0.5231  
 - 4 parts: 0.4467  
@@ -114,44 +114,44 @@ The denominator covers 99.73% of the process spread (some practitioners use 5.15
 ### Numerical Example 1: Full GR&R from Figure 14.6
 
 Given data from a completed study with 3 appraisers, 10 parts, 3 trials:  
-\( \overline{\overline{R}} = 0.3417 \), \( \overline{X}_{\text{DIFF}} = 0.4446 \), \( R_p = 3.511 \), and \( n=10, r=3 \).
+$ \overline{\overline{R}} = 0.3417 $, $ \overline{X}_{\text{DIFF}} = 0.4446 $, $ R_p = 3.511 $, and $ n=10, r=3 $.
 
 Step 1: EV  
-\( EV = 0.3417 \times 0.5908 = 0.20188 \)
+$ EV = 0.3417 \times 0.5908 = 0.20188 $
 
 Step 2: AV  
-\( \overline{X}_{\text{DIFF}} \times K_2 = 0.4446 \times 0.5231 = 0.23258 \)  
-Square: \( 0.23258^2 = 0.05410 \)  
-\( EV^2 = 0.20188^2 = 0.04076 \)  
-\( \frac{EV^2}{n r} = \frac{0.04076}{30} = 0.0013587 \)  
-\( AV = \sqrt{0.05410 - 0.0013587} = \sqrt{0.05274} = 0.22963 \)
+$ \overline{X}_{\text{DIFF}} \times K_2 = 0.4446 \times 0.5231 = 0.23258 $  
+Square: $ 0.23258^2 = 0.05410 $  
+$ EV^2 = 0.20188^2 = 0.04076 $  
+$ \frac{EV^2}{n r} = \frac{0.04076}{30} = 0.0013587 $  
+$ AV = \sqrt{0.05410 - 0.0013587} = \sqrt{0.05274} = 0.22963 $
 
 Step 3: GRR  
-\( GRR = \sqrt{0.04076 + 0.05274} = \sqrt{0.09350} = 0.30575 \)
+$ GRR = \sqrt{0.04076 + 0.05274} = \sqrt{0.09350} = 0.30575 $
 
 Step 4: PV  
-\( K_3 \) for 10 parts = 0.3146  
-\( PV = 3.511 \times 0.3146 = 1.10456 \)
+$ K_3 $ for 10 parts = 0.3146  
+$ PV = 3.511 \times 0.3146 = 1.10456 $
 
 Step 5: TV  
-\( TV = \sqrt{0.30575^2 + 1.10456^2} = \sqrt{0.09350 + 1.22005} = \sqrt{1.31355} = 1.14610 \)
+$ TV = \sqrt{0.30575^2 + 1.10456^2} = \sqrt{0.09350 + 1.22005} = \sqrt{1.31355} = 1.14610 $
 
 Step 6: Percentages  
-\( \%EV = 100 \times (0.20188 / 1.14610) = 17.62\% \)  
-\( \%AV = 100 \times (0.22963 / 1.14610) = 20.04\% \)  
-\( \%GRR = 100 \times (0.30575 / 1.14610) = 26.68\% \)  
-\( \%PV = 100 \times (1.10456 / 1.14610) = 96.38\% \)
+$ \%EV = 100 \times (0.20188 / 1.14610) = 17.62\% $  
+$ \%AV = 100 \times (0.22963 / 1.14610) = 20.04\% $  
+$ \%GRR = 100 \times (0.30575 / 1.14610) = 26.68\% $  
+$ \%PV = 100 \times (1.10456 / 1.14610) = 96.38\% $
 
 Step 7: ndc  
-\( ndc = 1.41 \times (1.10456 / 0.30575) = 1.41 \times 3.6124 = 5.094 \approx 5 \)
+$ ndc = 1.41 \times (1.10456 / 0.30575) = 1.41 \times 3.6124 = 5.094 \approx 5 $
 
 Interpretation: The %GRR of 26.68% falls in the cautious zone (10–30%). The measurement system is acceptable depending on application, cost, and risk. With an ndc of 5, the system can distinguish enough categories for control charts and capability studies. If the result had been above 30%, the practitioner would need to improve the measurement system before using it for process control.
 
 ### Numerical Example 2: Precision/Tolerance Ratio
 
 Assume the specification width (USL – LSL) for this dimension is 10 units.  
-\( \text{Tolerance} / 6 = 10 / 6 = 1.6667 \)  
-\( \%GRR_{\text{tol}} = 100 \times 0.30575 / 1.6667 = 18.34\% \)
+$ \text{Tolerance} / 6 = 10 / 6 = 1.6667 $  
+$ \%GRR_{\text{tol}} = 100 \times 0.30575 / 1.6667 = 18.34\% $
 
 Interpretation: With a 18.34% P/T ratio, the measurement system is in the caution zone (10–30%). If the ratio had been below 10%, the system would be fully acceptable; above 30% would demand corrective action.
 
@@ -182,15 +182,15 @@ The CSSC training manual provides a concise pass/caution/fail table for variable
 
 ## Effect of R&R on Capability
 
-As GR&R increases, the observed capability (\( C_p \)) becomes inflated relative to the actual process capability. For example, with an observed \( C_p \) of 1.0 and a GR&R of 50%, the actual \( C_p \) is 1.23. Reducing GR&R to 10% brings the observed \( C_p \) much closer to the true value, at 1.01. This relationship is shown graphically in Figure 14.10 of the ASQ Handbook. A poor measurement system masks process problems and can lead to mistaken conclusions about process capability.
+As GR&R increases, the observed capability ($ C_p $) becomes inflated relative to the actual process capability. For example, with an observed $ C_p $ of 1.0 and a GR&R of 50%, the actual $ C_p $ is 1.23. Reducing GR&R to 10% brings the observed $ C_p $ much closer to the true value, at 1.01. This relationship is shown graphically in Figure 14.10 of the ASQ Handbook. A poor measurement system masks process problems and can lead to mistaken conclusions about process capability.
 
 ## Linearity and Bias Study
 
 Linearity studies assess whether the measurement bias changes across the operating range. Bias is evaluated by comparing measurements against master values. The ASQ Handbook provides an example (Table 14.2) where appraiser A measurements are compared to master values for 10 parts across a range.
 
 From Minitab analysis:
-- \( R^2 = 0.0\% \), indicating a severe nonlinearity problem. The relationship between bias and reference value is not linear, so the reported percent linearity is not valid.
-- Average percent bias has a \( p \)-value of zero, indicating statistically significant bias overall. The report also provides the percent bias at each reference point.
+- $ R^2 = 0.0\% $, indicating a severe nonlinearity problem. The relationship between bias and reference value is not linear, so the reported percent linearity is not valid.
+- Average percent bias has a $ p $-value of zero, indicating statistically significant bias overall. The report also provides the percent bias at each reference point.
 
 Causes of nonlinearity include improper calibration at the extremes, errors in master part measurements, worn instrument components, or inherent instrument design flaws. When nonlinearity is present, the practitioner must correct the gage or restrict its use to a range where linearity holds. After correction, the study should be repeated across a broader range.
 

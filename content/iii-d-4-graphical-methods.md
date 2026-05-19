@@ -134,23 +134,23 @@ The strength and direction of a linear relationship is quantified by the Pearson
 
 **Formulas**
 
-Let \(n\) be the number of data pairs \((x_i, y_i)\).
+Let $n$ be the number of data pairs $(x_i, y_i)$.
 
-\[
+$$
 S_{xx} = \sum x_i^2 - \frac{\left(\sum x_i\right)^2}{n}
-\]
+$$
 
-\[
+$$
 S_{xy} = \sum x_i y_i - \frac{\left(\sum x_i\right)\left(\sum y_i\right)}{n}
-\]
+$$
 
-\[
+$$
 S_{yy} = \sum y_i^2 - \frac{\left(\sum y_i\right)^2}{n}
-\]
+$$
 
-\[
+$$
 r = \frac{S_{xy}}{\sqrt{S_{xx} \; S_{yy}}}
-\]
+$$
 
 **Interpretation of r**
 
@@ -161,11 +161,11 @@ r = \frac{S_{xy}}{\sqrt{S_{xx} \; S_{yy}}}
 
 **Coefficient of Determination**
 
-\[
+$$
 r^2 = r^2
-\]
+$$
 
-\(r^2\) indicates the proportion of variability in y that can be explained by the linear relationship with x.
+$r^2$ indicates the proportion of variability in y that can be explained by the linear relationship with x.
 
 ### Example 1: Exercise Time and Weight Loss
 
@@ -182,38 +182,38 @@ n = 4.
 
 Compute sums:
 
-\[
+$$
 \sum x = 210,\quad \sum y = 11.5
-\]
-\[
+$$
+$$
 \sum x^2 = 900 + 2025 + 3600 + 5625 = 12,150
-\]
-\[
+$$
+$$
 \sum y^2 = 1 + 4 + 16 + 20.25 = 41.25
-\]
-\[
+$$
+$$
 \sum xy = 30 \times 1 + 45 \times 2 + 60 \times 4 + 75 \times 4.5 = 697.5
-\]
+$$
 
 Calculate:
 
-\[
+$$
 S_{xx} = 12,150 - \frac{210^2}{4} = 12,150 - 11,025 = 1,125
-\]
-\[
+$$
+$$
 S_{xy} = 697.5 - \frac{210 \times 11.5}{4} = 697.5 - 603.75 = 93.75
-\]
-\[
+$$
+$$
 S_{yy} = 41.25 - \frac{11.5^2}{4} = 41.25 - 33.0625 = 8.1875
-\]
+$$
 
-\[
+$$
 r = \frac{93.75}{\sqrt{1125 \times 8.1875}} = \frac{93.75}{\sqrt{9210.9375}} \approx \frac{93.75}{95.97} \approx 0.9768 \approx 0.977
-\]
+$$
 
-\[
+$$
 r^2 \approx 0.954
-\]
+$$
 
 Thus, 95.4% of the variability in weight loss is explained by exercise time. The strong positive correlation suggests that increasing exercise time is associated with greater weight loss.
 
@@ -228,32 +228,32 @@ y: 40.70, 33.00, 44.00, 35.20, 29.70, 38.50, 47.30, 25.30, 35.20, 33.00
 
 n = 10.
 
-\[
+$$
 \sum x = 3751,\quad \sum y = 361.9
-\]
-\[
+$$
+$$
 \sum x^2 = 1,491,809
-\]
-\[
+$$
+$$
 \sum y^2 = 13,490.29
-\]
-\[
+$$
+$$
 \sum xy = 135,556.3
-\]
+$$
 
-\[
+$$
 S_{xx} = 1,491,809 - \frac{3751^2}{10} = 1,491,809 - 1,407,000.1 = 84,808.9
-\]
-\[
+$$
+$$
 S_{xy} = 135,556.3 - \frac{3751 \times 361.9}{10} = 135,556.3 - 135,748.69 = -192.39
-\]
-\[
+$$
+$$
 S_{yy} = 13,490.29 - \frac{361.9^2}{10} = 13,490.29 - 13,097.161 = 393.129
-\]
+$$
 
-\[
+$$
 r = \frac{-192.39}{\sqrt{84,808.9 \times 393.129}} \approx -0.033
-\]
+$$
 
 The correlation is effectively zero. There is no linear relationship between mold compression pressure and surface finish in this data. If the result had been strongly negative (for example, r ≈ –0.9), the team would target mold pressure as a root cause for improving surface finish. Since r ≈ –0.033, the team should investigate other variables (coolant temperature, cooling time, hold time) that show stronger correlations.
 
@@ -284,21 +284,21 @@ Since p > 0.05, we conclude the data follow a normal distribution. The plot also
 
 The Weibull distribution is widely used for reliability analysis when the underlying failure distribution is unknown. Its probability density function is:
 
-\[
+$$
 P(x) = a\, b\, (x - g)^{\,b-1}\, e^{-a\,(x - g)^{\,b}}
-\]
+$$
 
 where
 
-- \(a\) = scale parameter
-- \(b\) = shape parameter
-- \(g\) = location parameter
+- $a$ = scale parameter
+- $b$ = shape parameter
+- $g$ = location parameter
 
 **Shape Parameter and Life Cycle**
 
-- \(b < 1\): failure rate decreases with time (infant mortality / early life failures).
-- \(b = 1\): failure rate is constant (useful life / random failures).
-- \(b > 1\): failure rate increases with time (wear-out failures).
+- $b < 1$: failure rate decreases with time (infant mortality / early life failures).
+- $b = 1$: failure rate is constant (useful life / random failures).
+- $b > 1$: failure rate increases with time (wear-out failures).
 
 **Estimating MTBF and Reliability**
 
@@ -316,7 +316,7 @@ Minitab’s Weibull analysis yields:
 - AD p-value > 0.25, indicating a good fit to the Weibull distribution.
 
 From the plot, the 63.2% line intersects the best-fit line at approximately 4.635 hours, so MTBF ≈ 4.635 hours.
-To estimate reliability at 3.9 hours: draw a vertical line at 3.9 hours; it crosses the fitted line at about 30% on the percent failure scale. Thus reliability \(R(3.9) \approx 0.70\), meaning about 70% of units survive beyond 3.9 hours.
+To estimate reliability at 3.9 hours: draw a vertical line at 3.9 hours; it crosses the fitted line at about 30% on the percent failure scale. Thus reliability $R(3.9) \approx 0.70$, meaning about 70% of units survive beyond 3.9 hours.
 
 With b = 6.734 (much greater than 1), the units are failing in the wear-out region, indicating that age-related deterioration is dominant.
 

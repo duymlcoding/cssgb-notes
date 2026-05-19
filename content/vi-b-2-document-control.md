@@ -75,9 +75,9 @@ Eight documented rules signal an out-of-control condition and trigger investigat
 
 When a process is both in control and capable, teams also document sigma level and process capability (Cpk). Sigma level is the smaller of:
 
-\[
+$$
 \frac{USL - \bar{x}}{\sigma} \quad\text{or}\quad \frac{LSL - \bar{x}}{\sigma}
-\]
+$$
 
 Process capability equals sigma level divided by 3. A Cpk of 1.0 corresponds to a sigma level of 3; a Cpk of 1.33 corresponds to a sigma level of 4, the minimum many experts consider acceptable for customer satisfaction.
 

@@ -37,15 +37,15 @@ Leadership often requires a more detailed financial picture than the matrix prov
 
 The payback method estimates how long it takes for a project to pay for itself. Use the formula:
 
-\[
+$$
 \text{Payback (years)} = \frac{\text{Cost of implementing solution}}{\text{Annual financial benefits} - \text{Annual operating costs}}
-\]
+$$
 
 If a solution costs $50,000 to implement, generates $15,000 in annual benefits, and carries $2,000 in annual extra labor, the payback is:
 
-\[
+$$
 \frac{50,000}{15,000 - 2,000} = \frac{50,000}{13,000} \approx 3.84 \text{ years}
-\]
+$$
 
 Shorter payback periods are preferred, but a longer payback can still be acceptable when the solution solves a critical problem or enables future success.
 
