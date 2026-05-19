@@ -226,7 +226,7 @@ $$
 Z = \frac{0.03 - 0.02}{\sqrt{\frac{0.02 \times 0.98}{500}}} = \frac{0.01}{\sqrt{\frac{0.0196}{500}}} = \frac{0.01}{\sqrt{0.0000392}} = \frac{0.01}{0.006261} \approx 1.597
 $$
 
-$1.597$ < 1.645$, so do not reject $ H_0$.
+Since $1.597 < 1.645$, do not reject $H_0$.
 
 Conclusion: At the 0.05 significance level, the data do not provide sufficient evidence that the vendor’s at-most-2% claim is false. The handbook’s Minitab analysis reports a p-value of 0.055, consistent with this conclusion.
 
@@ -347,7 +347,7 @@ $$
 t = \frac{0.0126}{0.00919 / \sqrt{5}} = \frac{0.0126}{0.00919 / 2.236} = \frac{0.0126}{0.00411} \approx 3.08
 $$
 
-$df = 4$. For a two-tailed test at α = 0.05, $ t_{0.025,4} = 2.776$. Since $3.08$ > 2.776$, reject $ H_0: \mu_d = 0$.
+$df = 4$. For a two-tailed test at $\alpha = 0.05$, $t_{0.025,4} = 2.776$. Since $3.08 > 2.776$, reject $H_0: \mu_d = 0$.
 
 Conclusion: Calibration produced a statistically significant difference in measurements. The 95% confidence interval for the mean difference does not include 0 (0.00123 to 0.02397), confirming the result.
 
@@ -380,7 +380,7 @@ $$
 F = \frac{1800^2}{600^2} = \frac{3,240,000}{360,000} = 9
 $$
 
-Numerator df = 7, denominator df = 5. From the F-table, the critical value $F_{0.05,7,5} = 4.88$. Since $9$ > 4.88$, reject $ H_0$.
+Numerator df = 7, denominator df = 5. From the F-table, the critical value $F_{0.05,7,5} = 4.88$. Since $9 > 4.88$, reject $H_0$.
 
 There is evidence that the variance has decreased, meaning crispness is more consistent after aging one month.
 

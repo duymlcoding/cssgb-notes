@@ -220,7 +220,7 @@ Compute each cell:
 
 Total $\chi^2 = 4.0$.
 
-Degrees of freedom = (rows - 1)×(columns - 1) = (2-1)×(3-1) = 2. At $\alpha = 0.05$, the critical value from a chi-square table with $\nu = 2$ is approximately 5.991. Since $4.0$ < 5.991$, we fail to reject the null hypothesis of independence. The team would conclude that defect type does not significantly depend on shift. If the statistic had exceeded the critical value, the team would investigate shift-specific procedures that might cause certain defects.
+Degrees of freedom = (rows - 1)×(columns - 1) = (2-1)×(3-1) = 2. At $\alpha = 0.05$, the critical value from a chi-square table with $\nu = 2$ is approximately 5.991. Since $4.0 < 5.991$, we fail to reject the null hypothesis of independence. The team would conclude that defect type does not significantly depend on shift. If the statistic had exceeded the critical value, the team would investigate shift-specific procedures that might cause certain defects.
 
 ## Student's t-Distribution
 
