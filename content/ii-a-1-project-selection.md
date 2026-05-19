@@ -39,7 +39,7 @@ Follow these steps to calculate the project score.
 
 1. **Convert each weight to a multiplier.** Divide the assigned weight by 3.  
    $$\text{Multiplier} = \frac{\text{Weight}}{3}$$  
-   Example: a weight of 5 gives \$5/3 \approx 1.7$, a weight of 3 gives \$1$, and a weight of 1 gives \$0.33$.
+   Example: a weight of 5 gives $5/3 \approx 1.7$, a weight of 3 gives $1$, and a weight of 1 gives $0.33$.
 
 2. **Multiply the answer value by the converted weight.** For each row, take the column number where the team placed its mark (1 through 5) and multiply by the multiplier from step 1. This produces a weighted value for that row.  
    $$\text{Weighted Answer} = \text{Multiplier} \times \text{Column Number}$$
@@ -63,17 +63,17 @@ Using the example weights and answer grid from the source, the matrix produced t
 
 Step 4 multiplies each column sum by its column number:
 
-- No column: \$1.3 \times 1 = 1.3$
-- Mostly No column: \$4.4 \times 2 = 8.8$
-- Possibly column: \$4.7 \times 3 = 14.1$
-- Mostly Yes column: \$3.3 \times 4 = 13.2$
-- Yes column: \$4.4 \times 5 = 22.0$
+- No column: $1.3 \times 1 = 1.3$
+- Mostly No column: $4.4 \times 2 = 8.8$
+- Possibly column: $4.7 \times 3 = 14.1$
+- Mostly Yes column: $3.3 \times 4 = 13.2$
+- Yes column: $4.4 \times 5 = 22.0$
 
-Step 5 sum of column products: \$1.3 + 8.8 + 14.1 + 13.2 + 22.0 = 59.4$
+Step 5 sum of column products: $1.3 + 8.8 + 14.1 + 13.2 + 22.0 = 59.4$
 
-Step 6 sum of column sums: \$1.3 + 4.4 + 4.7 + 3.3 + 4.4 = 18.1$
+Step 6 sum of column sums: $1.3 + 4.4 + 4.7 + 3.3 + 4.4 = 18.1$
 
-Step 7 division: \$59.4 \div 18.1 \approx 3.28$
+Step 7 division: $59.4 \div 18.1 \approx 3.28$
 
 The project score is 3.28.
 

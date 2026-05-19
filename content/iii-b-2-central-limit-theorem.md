@@ -37,7 +37,7 @@ $$
 \mu = \frac{67 + 68 + 73 + 74 + 81 + 85 + 88 + 88 + 90 + 90 + 90 + 93 + 94 + 98 + 99}{15} = \frac{1278}{15} = 85.2
 $$
 
-Step 2: Subtract the mean from each score and square the result. For the first score, \$67 - 85.2 = -18.2$, and $(-18.2)^2 = 331.24$. The full set of squared deviations is:
+Step 2: Subtract the mean from each score and square the result. For the first score, $67 - 85.2 = -18.2$, and $(-18.2)^2 = 331.24$. The full set of squared deviations is:
 
 331.24, 295.84, 148.84, 125.44, 17.64, 0.04, 7.84, 7.84, 23.04, 23.04, 23.04, 60.84, 77.44, 163.84, 190.44
 

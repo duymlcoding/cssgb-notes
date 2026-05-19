@@ -63,7 +63,7 @@ $$
 P(X = 0) = 1 \times 1 \times 0.3585 = 0.3585
 $$
 
-There is a 35.85% chance of observing zero defects even when the true defect rate is 5%. If the inspector found a defect, the probability of that event would be \$1 - P(X=0) = 0.6415$, which indicates that with a 5% defect rate, finding at least one defect in 20 is more likely than not. If a zero-defect sample were required for lot acceptance but the supplier's true rate is 5%, the buyer would still accept the lot about 36% of the time purely by chance. This clarifies why sampling plans must consider both producer and consumer risk.
+There is a 35.85% chance of observing zero defects even when the true defect rate is 5%. If the inspector found a defect, the probability of that event would be $1 - P(X=0) = 0.6415$, which indicates that with a 5% defect rate, finding at least one defect in 20 is more likely than not. If a zero-defect sample were required for lot acceptance but the supplier's true rate is 5%, the buyer would still accept the lot about 36% of the time purely by chance. This clarifies why sampling plans must consider both producer and consumer risk.
 
 ## Poisson Distribution
 
@@ -122,7 +122,7 @@ $$
 $$
 P(X=4) = \frac{3^4 e^{-3}}{4!} = 81 \times 0.0498 / 24 = 0.1680
 $$
-Sum \\$0.0498 + 0.1494 + 0.2240 + 0.2240 + 0.1680 = 0.8152$
+Sum $0.0498 + 0.1494 + 0.2240 + 0.2240 + 0.1680 = 0.8152$
 
 $$
 P(X \ge 5) = 1 - 0.8152 = 0.1848
@@ -182,7 +182,7 @@ $$
 \chi^2 = \sum_{i=1}^{\nu} Z_i^2
 $$
 
-The distribution is continuous, right-skewed, and becomes more symmetric as $\nu$ increases. Its mean equals $\nu$ and its variance equals \$2\nu $.
+The distribution is continuous, right-skewed, and becomes more symmetric as $\nu$ increases. Its mean equals $\nu$ and its variance equals $2\nu $.
 
 In Six Sigma projects, the chi-square distribution is used for hypothesis tests on categorical data (goodness-of-fit, contingency tables) and for constructing confidence intervals on the variance of a normal population.
 
@@ -220,7 +220,7 @@ Compute each cell:
 
 Total $\chi^2 = 4.0$.
 
-Degrees of freedom = (rows - 1)×(columns - 1) = (2-1)×(3-1) = 2. At $\alpha = 0.05$, the critical value from a chi-square table with $\nu = 2$ is approximately 5.991. Since \$4.0 < 5.991$, we fail to reject the null hypothesis of independence. The team would conclude that defect type does not significantly depend on shift. If the statistic had exceeded the critical value, the team would investigate shift-specific procedures that might cause certain defects.
+Degrees of freedom = (rows - 1)×(columns - 1) = (2-1)×(3-1) = 2. At $\alpha = 0.05$, the critical value from a chi-square table with $\nu = 2$ is approximately 5.991. Since $4.0$ < 5.991$, we fail to reject the null hypothesis of independence. The team would conclude that defect type does not significantly depend on shift. If the statistic had exceeded the critical value, the team would investigate shift-specific procedures that might cause certain defects.
 
 ## Student's t-Distribution
 
@@ -290,7 +290,7 @@ $$
 
 Degrees of freedom: numerator $\nu_1 = n_A - 1 = 9$, denominator $\nu_2 = n_B - 1 = 11$.
 
-Using an $F $-table at $\alpha = 0.05$, the critical value $ F_{0.05, 9, 11}$ is approximately 2.90. Since \\$1.857 < 2.90$, we fail to reject $ H_0$: the evidence is not strong enough to conclude that Machine B's variance is smaller. If the $ F $-ratio had exceeded the critical value, the team would have statistical justification to adopt Machine B for its lower variability.
+Using an $F $-table at $\alpha = 0.05$, the critical value $ F_{0.05, 9, 11}$ is approximately 2.90. Since $1.857 < 2.90$, we fail to reject $ H_0$: the evidence is not strong enough to conclude that Machine B's variance is smaller. If the $ F $-ratio had exceeded the critical value, the team would have statistical justification to adopt Machine B for its lower variability.
 
 ## Comparison Table
 
@@ -299,7 +299,7 @@ Using an $F $-table at $\alpha = 0.05$, the critical value $ F_{0.05, 9, 11}$ is
 | Binomial     | Discrete    | $np$        | $ np(1-p)$           | Proportion defective in a fixed sample size             |
 | Poisson      | Discrete    | $\Lambda$   | $\Lambda$           | Defect counts per unit of area, time, or volume         |
 | Normal       | Continuous  | $\mu$       | $\sigma^2$          | Modeling sample means, capability analysis, control charts |
-| Chi-Square   | Continuous  | $\nu$       | \$2\nu$              | Tests on categorical data, variance confidence intervals|
+| Chi-Square   | Continuous  | $\nu$       | $2\nu$              | Tests on categorical data, variance confidence intervals|
 | t            | Continuous  | 0 (for $df>1$) | $\frac{\nu}{\nu-2}$ (for $\nu>2$) | Hypothesis tests for means when $\sigma$ is unknown |
 | F            | Continuous  | $\frac{\nu_2}{\nu_2-2}$ (for $\nu_2>2$) | complex formula | Comparing two variances, ANOVA |
 

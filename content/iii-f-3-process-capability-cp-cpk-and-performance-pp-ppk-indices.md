@@ -15,7 +15,7 @@ Cp measures potential capability. It assumes the process is perfectly centred on
 
 $$C_p = \frac{\text{Tolerance zone}}{6\sigma}$$
 
-The denominator \$6\sigma$ captures the natural process spread (±3σ from the mean). The value $\sigma$ is the short-term standard deviation derived from control charts, typically $\sigma = \bar{R}/d_2$.
+The denominator $6\sigma$ captures the natural process spread (±3σ from the mean). The value $\sigma$ is the short-term standard deviation derived from control charts, typically $\sigma = \bar{R}/d_2$.
 
 A larger Cp indicates less variation relative to the specification width. For example, Cp = 1 means the natural tolerance (±3σ) exactly matches the specification limits. Cp = 2 means the specification width is twice the natural spread, the requirement for a Six Sigma process (σ ≤ 1/12 of the specification).
 
@@ -162,7 +162,7 @@ When the process is perfectly centred on the target, $C_{pm} = C_p $. Using the 
 
 The sigma level expresses the capability in terms of the number of standard deviations that fit between the process mean and the nearest specification limit, incorporating a 1.5σ shift to account for long-term dynamic variation.
 
-A Six Sigma process satisfies $Cp \ge 2$, meaning the specification width is at least 12σ. When the process mean drifts by up to 1.5σ over time, the effective distance to the specification limit becomes \$6\sigma - 1.5\sigma = 4.5\sigma $. The fraction defective then corresponds to a $ Z$ value of 4.5, which yields 3.4 defects per million opportunities total.
+A Six Sigma process satisfies $Cp \ge 2$, meaning the specification width is at least 12σ. When the process mean drifts by up to 1.5σ over time, the effective distance to the specification limit becomes $6\sigma - 1.5\sigma = 4.5\sigma $. The fraction defective then corresponds to a $ Z$ value of 4.5, which yields 3.4 defects per million opportunities total.
 
 To calculate the sigma level from capability indices:
 
@@ -170,7 +170,7 @@ To calculate the sigma level from capability indices:
 2. Compute the short-term Z-score: $Z_{\text{ST}} = 3 \times Cpk $.
 3. Add 1.5 to obtain the long-term sigma level: $\text{Sigma Level} = Z_{\text{ST}} + 1.5$.
 
-Example: For the capable process in Example 1, Cpk = 1.772, so $Z_{\text{ST}} = 3 \times 1.772 = 5.316$. Sigma level $= 5.316 + 1.5 = 6.816$. This process exceeds six-sigma capability. If Cpk had been 1.33, sigma level would be \$3 \times 1.33 + 1.5 = 5.49$, still a high level but leaving more defects.
+Example: For the capable process in Example 1, Cpk = 1.772, so $Z_{\text{ST}} = 3 \times 1.772 = 5.316$. Sigma level $= 5.316 + 1.5 = 6.816$. This process exceeds six-sigma capability. If Cpk had been 1.33, sigma level would be $3 \times 1.33 + 1.5 = 5.49$, still a high level but leaving more defects.
 
 ## Short-Term vs. Long-Term Capability and the Sigma Shift
 

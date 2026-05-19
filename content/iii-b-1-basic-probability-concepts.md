@@ -128,7 +128,7 @@ $$P(\text{Machine1} \cup \text{Machine2}) = 0.8 + 0.8 - (0.8 \times 0.8)$$
 Compute:
 
 - $P(\text{Machine1 and Machine2}) = 0.8 \times 0.8 = 0.64$
-- Then \$0.8 + 0.8 - 0.64 = 1.6 - 0.64 = 0.96$
+- Then $0.8 + 0.8 - 0.64 = 1.6 - 0.64 = 0.96$
 
 **Interpretation:** The redundancy yields a 96% chance of at least one machine working. This is a reliability calculation common in process design. If the probability were 0.80 without redundancy, adding a second identical machine raises the probability substantially.
 
@@ -192,7 +192,7 @@ $$_n P_r = n \times (n-1) \times (n-2) \times \cdots \times (n - r + 1) = \frac{
 
 Important factorial values needed for hand calculations:
 
-$\$0! = 1, \quad 1! = 1, \quad n! = n \times (n-1) \times \cdots \times 2 \times 1$$
+$$0! = 1, \quad 1! = 1, \quad n! = n \times (n-1) \times \cdots \times 2 \times 1$$
 
 Also note: $_n P_n = n!$
 
@@ -328,7 +328,7 @@ The following steps create a Pareto chart for denial reasons of medical claims. 
 
 1. Sort the reasons from largest count to smallest.
 2. Add a cumulative count column. The first cell equals the first count. Each subsequent cumulative cell equals the previous cumulative cell plus the current count.
-3. Add a percent column: divide each individual count by the grand total (50123). Use absolute cell reference (`$C\$9` for the total) to drag the formula. Format as percentages.
+3. Add a percent column: divide each individual count by the grand total (50123). Use absolute cell reference (`$C$9$` for the total) to drag the formula. Format as percentages.
 4. The resulting table:
 
 | Reason                  | Count  | Cumulative Percent |

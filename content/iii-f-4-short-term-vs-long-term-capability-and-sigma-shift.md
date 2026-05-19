@@ -86,7 +86,7 @@ A $Pp$ of 1.667 indicates that the overall process spread is narrower than the t
 
 **Step 2: Calculate Ppk**
 
-Compute the distance to each specification limit in units of \$3s $:
+Compute the distance to each specification limit in units of $3s$:
 
 $$ \text{Upper side} = \frac{USL - \bar{x}}{3s} = \frac{10.03 - 10.014}{0.012} = \frac{0.016}{0.012} = 1.333 $$
 $$ \text{Lower side} = \frac{\bar{x} - LSL}{3s} = \frac{10.014 - 9.99}{0.012} = \frac{0.024}{0.012} = 2.0 $$
@@ -155,7 +155,7 @@ Compute deviations from target $(x_i - 50)$:
 - 50.2 → 0.2 → 0.04
 - 49.8 → -0.2 → 0.04
 
-Sum of squares = \\$0.01 + 0.01 + 0 + 0.04 + 0.04 = 0.10$
+Sum of squares = $0.01 + 0.01 + 0 + 0.04 + 0.04 = 0.10$
 
 $$ \hat{\sigma} = \sqrt{\frac{0.10}{5-1}} = \sqrt{0.025} = 0.1581 $$
 

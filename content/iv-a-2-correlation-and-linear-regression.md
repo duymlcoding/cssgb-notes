@@ -48,8 +48,8 @@ Consider three pairs: $(3,2)$, $(3,3)$, $(6,4)$.
 
 **Step 1: Using the standardized-score formula**  
 $\bar{x} = 4$, $\bar{y} = 3$  
-Deviations for $x $: $(-1, -1, 2)$; squares sum to \$6$, so $ s_x = \sqrt{\frac{6}{3-1}} = \sqrt{3} \approx 1.732$  
-Deviations for $y $: $(-1, 0, 1)$; squares sum to \$2$, so $ s_y = \sqrt{\frac{2}{2}} = 1.0$  
+Deviations for $x $: $(-1, -1, 2)$; squares sum to $6$, so $ s_x = \sqrt{\frac{6}{3-1}} = \sqrt{3} \approx 1.732$  
+Deviations for $y $: $(-1, 0, 1)$; squares sum to $2$, so $ s_y = \sqrt{\frac{2}{2}} = 1.0$  
 Products $(x_i-\bar{x})(y_i-\bar{y})$: $(-1)(-1)=1$, $(-1)(0)=0$, $(2)(1)=2$; sum = 3  
 
 $$
@@ -59,7 +59,7 @@ $$
 **Step 2: Using the computational formula**  
 $\sum x = 12$, $\sum y = 9$, $\sum xy = 3\cdot2+3\cdot3+6\cdot4 = 39$  
 $\sum x^2 = 9+9+36 = 54$, $\sum y^2 = 4+9+16 = 29$  
-Numerator: \$3 \times 39 - 12 \times 9 = 117 - 108 = 9$  
+Numerator: $3 \times 39 - 12 \times 9 = 117 - 108 = 9$  
 Denominator: $\sqrt{(3 \times 54 - 12^2)(3 \times 29 - 9^2)} = \sqrt{(162-144)(87-81)} = \sqrt{18 \times 6} = \sqrt{108} = 10.392$  
 
 $$
@@ -140,7 +140,7 @@ t = 0.972 \sqrt{\frac{6-2}{1 - 0.972^2}}
    \approx 0.972 \times 8.511 = 8.27
 $$
 
-Degrees of freedom = 4. For a one-tailed test with $\alpha = 0.05$, the critical value from Appendix Q is $ t_{c} = 2.132$. Since \\$8.27 > 2.132$, we reject $ H_0$ and conclude that a positive linear correlation exists between exercise hours and weight loss.
+Degrees of freedom = 4. For a one-tailed test with $\alpha = 0.05$, the critical value from Appendix Q is $ t_{c} = 2.132$. Since $8.27 > 2.132$, we reject $ H_0$ and conclude that a positive linear correlation exists between exercise hours and weight loss.
 
 If the test statistic had fallen below the critical value, we would have failed to reject $H_0$, meaning the data would not provide sufficient evidence of a linear relationship.
 
@@ -155,7 +155,7 @@ t = 0.866 \sqrt{\frac{3-2}{1 - 0.866^2}}
    = 1.732
 $$
 
-Degrees of freedom = 1. The two-tailed critical value for $\alpha = 0.05$ is 12.706. Since \\$1.732 < 12.706$, we fail to reject $ H_0$. Despite the high $ r $, the result is not statistically significant. The Minitab output for this dataset gives a $ p $-value of 0.333, which is greater than 0.05, confirming the conclusion. A practitioner seeing this result would *not* claim a real correlation based on such a small sample.
+Degrees of freedom = 1. The two-tailed critical value for $\alpha = 0.05$ is 12.706. Since $1.732 < 12.706$, we fail to reject $ H_0$. Despite the high $ r $, the result is not statistically significant. The Minitab output for this dataset gives a $ p $-value of 0.333, which is greater than 0.05, confirming the conclusion. A practitioner seeing this result would *not* claim a real correlation based on such a small sample.
 
 ## Simple Linear Regression
 
@@ -348,7 +348,7 @@ $$
 t = \frac{0.3}{0.0707} = 4.24
 $$
 
-6. Decision: For a two-tailed test with $\alpha = 0.05$ and $ df = 2$, the critical value is 4.303. Since \\$4.24 < 4.303$, we fail to reject $ H_0$. There is insufficient evidence to conclude that temperature is a useful predictor of viscosity at the 5% significance level. Had $ t$ exceeded the critical value, we would have concluded a significant linear relationship, permitting use of the regression model for prediction and process control.
+6. Decision: For a two-tailed test with $\alpha = 0.05$ and $ df = 2$, the critical value is 4.303. Since $4.24 < 4.303$, we fail to reject $ H_0$. There is insufficient evidence to conclude that temperature is a useful predictor of viscosity at the 5% significance level. Had $ t$ exceeded the critical value, we would have concluded a significant linear relationship, permitting use of the regression model for prediction and process control.
 
 ## Multiple Linear Regression (Overview)
 

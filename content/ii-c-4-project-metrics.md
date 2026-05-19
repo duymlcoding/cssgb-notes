@@ -30,7 +30,7 @@ If a statement fails to answer all five, the team cannot set a precise, trackabl
 
 Consider this strong problem statement from the training manual:
 
-> In the first quarter, the California distribution center sent 108,000 packages. Of those packages, 15,000 were returned, resulting in a 13.8 percent return rate. The rate of return is above the accepted 7 percent rate and cost the company an additional \\$372,000 for the quarter. Over the course of the year, the current process could result in additional costs of over \$1.4 million.
+> In the first quarter, the California distribution center sent 108,000 packages. Of those packages, 15,000 were returned, resulting in a 13.8 percent return rate. The rate of return is above the accepted 7 percent rate and cost the company an additional 372,000 for the quarter. Over the course of the year, the current process could result in additional costs of over $1.4$ million.
 
 The team calculates the baseline return rate exactly:
 
@@ -38,18 +38,18 @@ $$
 \text{Return Rate} = \frac{15,000 \text{ returned packages}}{108,000 \text{ sent packages}} \times 100 = 13.89\%
 $$
 
-The cost impact for one quarter is \\$372,000, and the projected annual cost is approximately \$1.4 million. The sponsor’s accepted return rate is 7%.
+The cost impact for one quarter is 372,000, and the projected annual cost is approximately $1.4$ million. The sponsor’s accepted return rate is 7%.
 
 From these numbers the team sets two project metrics:
 
 - Primary metric: Return rate, to be reduced from a baseline of 13.9 % to at most 7 %.
-- Financial metric: Cost of returns, to be reduced by at least \\$372,000 per quarter, achieving an annual savings of \$1.4 million.
+- Financial metric: Cost of returns, to be reduced by at least 372,000 per quarter, achieving an annual savings of $1.4$ million.
 
-These metrics will be tracked throughout the project. The project objective statement becomes: "Reduce the return rate from 13.9 % to 7 % or less, saving a minimum of \$1.4 million per year." Every member of the team and every stakeholder can see the target, the baseline, and the dollar impact.
+These metrics will be tracked throughout the project. The project objective statement becomes: "Reduce the return rate from 13.9 % to 7 % or less, saving a minimum of $1.4$ million per year." Every member of the team and every stakeholder can see the target, the baseline, and the dollar impact.
 
 ## Using Metrics for Project Verification and Closure
 
-At the end of the project, metrics provide the proof that the work is done. Closure is not a negotiation; it is a final step executed after the team demonstrates that the established goals were met. According to the ASQ CSSGB Handbook, analysis of project measures, the same metrics set in the charter, serves as one acceptable method of proving the project achieved its intent. The team compares the final documented results against the charter’s objectives. If the return rate fell to 6.5 % and quarterly costs dropped by \\$390,000, the metrics confirm success, and the sponsor can confidently close the project.
+At the end of the project, metrics provide the proof that the work is done. Closure is not a negotiation; it is a final step executed after the team demonstrates that the established goals were met. According to the ASQ CSSGB Handbook, analysis of project measures, the same metrics set in the charter, serves as one acceptable method of proving the project achieved its intent. The team compares the final documented results against the charter’s objectives. If the return rate fell to 6.5 % and quarterly costs dropped by 390,000, the metrics confirm success, and the sponsor can confidently close the project.
 
 Even when independent review is requested, the review examines the same project metrics. Teams that define metrics clearly at the start avoid ambiguity during approval and build credibility for future improvement efforts.
 

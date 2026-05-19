@@ -59,7 +59,7 @@ Project budgets demand continuous, transparent communication. While end customer
 
 Two common challenges arise. First, not every team member may be aware of all financial drivers because sensitive pay data cannot be shared openly; in such cases a Black Belt or designated financial person must handle certain analyses confidentially. Second, organizations calculate project budgets differently: some track only direct expenditures like equipment and software, while others also account for team hours and implementation expenses outside the team. The Six Sigma leader must therefore engage in a thorough discussion with the sponsor before budgeting begins to clarify how costs are tallied, what flexibility exists for budget increases, and what role the leader will play in budget maintenance.
 
-When team members understand the financial constraints, they can propose improvements that fit within those limits. A solution requiring an \\$80,000 capital investment cannot be pursued if the project budget is only \\$50,000. Clear communication about budgetary realities prevents wasted effort and keeps the team’s proposals feasible.
+When team members understand the financial constraints, they can propose improvements that fit within those limits. A solution requiring an 80,000 capital investment cannot be pursued if the project budget is only 50,000. Clear communication about budgetary realities prevents wasted effort and keeps the team’s proposals feasible.
 
 ## Defining Measures of Success
 

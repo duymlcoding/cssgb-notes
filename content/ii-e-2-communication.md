@@ -106,7 +106,7 @@ Breaking a phase into smaller, communicated sub-deadlines makes the work more ma
 
 Budget management demands clear, sometimes delicate communication. The CSSC manual highlights that not all team members will be aware of financial drivers, and some financial data (such as employee pay) may be restricted. In such cases, the project-leading Black Belt may need to perform certain analyses alone.
 
-Whenever possible, teams benefit when members are made aware of as many financial drivers and constraints as possible. Knowing that a sponsor can only seek a \\$50,000 budget prevents the team from proposing an \\$80,000 capital investment. Informed decisions require this communication.
+Whenever possible, teams benefit when members are made aware of as many financial drivers and constraints as possible. Knowing that a sponsor can only seek a 50,000 budget prevents the team from proposing an 80,000 capital investment. Informed decisions require this communication.
 
 A Six Sigma leader must have honest, thorough conversations with the sponsor and the organization about:
 

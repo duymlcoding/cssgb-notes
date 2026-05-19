@@ -29,7 +29,7 @@ A practical dataset of chemical product weights in grams serves to illustrate al
 10.9, 10.8, 11.7, 12.3, 10.6, 12.2, 11.6, 11.2, 10.7, 11.4
 ```
 
-The sum is \$220.5$ grams and $ n = 20$, so
+The sum is $220.5$ grams and $ n = 20$, so
 
 $$ \bar{x} = \frac{220.5}{20} = 11.025 \text{ grams} $$
 
@@ -40,7 +40,7 @@ Sorting the data gives:
 10.9, 11.1, 11.2, 11.4, 11.4, 11.6, 11.7, 11.9, 12.2, 12.3
 ```
 
-The median $\tilde{x}$ is the average of the tenth and eleventh values, \$10.9$ grams. Several values appear twice (10.6, 10.8, 10.9, 11.4), so the mode is not unique. The range is \\$12.3 - 9.7 = 2.6$ grams. A wide range or a mean far from a specification target can point to an unstable process that requires investigation before improvement efforts focus on reducing variation.
+The median $\tilde{x}$ is the average of the tenth and eleventh values, $10.9$ grams. Several values appear twice (10.6, 10.8, 10.9, 11.4), so the mode is not unique. The range is $12.3 - 9.7 = 2.6$ grams. A wide range or a mean far from a specification target can point to an unstable process that requires investigation before improvement efforts focus on reducing variation.
 
 ### Standard Deviation
 
@@ -81,13 +81,13 @@ Find each squared deviation and sum them:
 \end{aligned}
 ```
 
-Total squared deviation sum = \\$1496.4$. Thus
+Total squared deviation sum = $1496.4$. Thus
 
 $$ \sigma = \sqrt{\frac{1496.4}{15}} = \sqrt{99.76} \approx 9.987 $$
 
 The standard deviation of approximately 10 points indicates a fairly wide spread of performance around the mean of 85.2. If instead the standard deviation were 3 and the mean remained 85, the teacher would conclude that the class performs consistently, suggesting the teaching and test are effective. A large standard deviation coupled with a low mean, like 60 with σ = 30, would point to a split in student mastery and prompt a search for root causes such as a missing concept in one class.
 
-**Example 2, Chemical weights (sample data).** Using the 20 weight values as a sample, compute $s $. With $\bar{x} = 11.025$, the squared deviations sum to approximately \$9.197$ (detailed arithmetic omitted for brevity but verifiable). Then
+**Example 2, Chemical weights (sample data).** Using the 20 weight values as a sample, compute $s $. With $\bar{x} = 11.025$, the squared deviations sum to approximately $9.197$ (detailed arithmetic omitted for brevity but verifiable). Then
 
 $$ s = \sqrt{\frac{9.197}{20-1}} = \sqrt{\frac{9.197}{19}} \approx \sqrt{0.48405} \approx 0.696 \text{ grams} $$
 
@@ -181,7 +181,7 @@ Given $n$ pairs $(x_i, y_i)$,
 
 $$ r = \frac{\sum xy - \frac{\sum x \sum y}{n}}{\sqrt{\left(\sum x^2 - \frac{(\sum x)^2}{n}\right)\left(\sum y^2 - \frac{(\sum y)^2}{n}\right)}} $$
 
-$r$ always satisfies $-1 \le r \le 1$. Values near $+1$ indicate a strong positive linear relationship; values near $-1$ indicate a strong negative linear relationship; values near \$0$ indicate no linear correlation.
+$r$ always satisfies $-1 \le r \le 1$. Values near $+1$ indicate a strong positive linear relationship; values near $-1$ indicate a strong negative linear relationship; values near $0$ indicate no linear correlation.
 
 **Example 1, Exercise and weight loss.** Four observations from a weight-loss center:
 
@@ -249,7 +249,7 @@ The **coefficient of determination** $r^2$ explains the proportion of variabilit
 
 A normal probability plot assesses whether a sample is drawn from a normally distributed population. Many statistical tests and capability indices require normality. The plot is constructed so that data from a normal distribution fall approximately along a straight line. The Anderson-Darling statistic (AD) and its associated p-value provide a formal test.
 
-From the source: bond strength data with $n=19$ gave $ AD = 0.471$ and p-value $= 0.217$. Because the p-value exceeds \$0.05$ (the typical alpha risk), the team fails to reject the null hypothesis of normality. The vertical dashed lines in the plot represent the specification limits of 9 and 11; the horizontal lines show that about 20% of parts will fall below the lower spec and 17% above the upper spec. If the p-value had been below 0.05, the data would be considered non-normal, and the team would either transform the data or use non-parametric methods instead of standard capability analysis.
+From the source: bond strength data with $n=19$ gave $ AD = 0.471$ and p-value $= 0.217$. Because the p-value exceeds $0.05$ (the typical alpha risk), the team fails to reject the null hypothesis of normality. The vertical dashed lines in the plot represent the specification limits of 9 and 11; the horizontal lines show that about 20% of parts will fall below the lower spec and 17% above the upper spec. If the p-value had been below 0.05, the data would be considered non-normal, and the team would either transform the data or use non-parametric methods instead of standard capability analysis.
 
 ### Weibull Plots and Reliability
 
@@ -298,7 +298,7 @@ DPMO normalizes defect counts by the total number of chances for a defect to occ
 
 $$ \text{DPMO} = \frac{\text{Number of defects}}{\text{Total opportunities}} \times 1{,}000{,}000 $$
 
-**Example 1.** A mail-order retailer reviews 90 order forms; each form has 10 data fields, so total opportunities = \$90 \times 10 = 900$. Two errors are found.
+**Example 1.** A mail-order retailer reviews 90 order forms; each form has 10 data fields, so total opportunities = $90 \times 10 = 900$. Two errors are found.
 
 $$ \text{DPMO} = \frac{2}{900} \times 1{,}000{,}000 = 2{,}222 $$
 
@@ -350,9 +350,9 @@ where $S$ is scrap (units discarded) and $ R$ is number of units reworked.
 
 **Example.** Using the same three-step chain but with rework and scrap counts:
 
-- Step A: 100 enter, 5 scrapped, 5 reworked → units not scrapped or reworked = \$100 - (5+5) = 90$ → $ RTY_A = 90/100 = 0.90$.
-- Step B: 95 enter (from A), 10 scrapped, 5 reworked → good units = \$95 - 15 = 80$ → $ RTY_B = 80/95 \approx 0.842$.
-- Step C: 85 enter, 5 scrapped, 15 reworked → good units = \$85 - 20 = 65$ → $ RTY_C = 65/85 \approx 0.765$.
+- Step A: 100 enter, 5 scrapped, 5 reworked → units not scrapped or reworked = $100 - (5+5) = 90$ → $ RTY_A = 90/100 = 0.90$.
+- Step B: 95 enter (from A), 10 scrapped, 5 reworked → good units = $95 - 15 = 80$ → $ RTY_B = 80/95 \approx 0.842$.
+- Step C: 85 enter, 5 scrapped, 15 reworked → good units = $85 - 20 = 65$ → $ RTY_C = 65/85 \approx 0.765$.
 
 Overall $RTY = 0.90 \times 0.842 \times 0.765 \approx 0.579$. While FTY was 0.80, the true first-pass yield free of any defect is only about 58%. A low RTY reveals muda in the form of rework loops and hidden factory costs, guiding the team to eliminate sources of defects rather than relying on inspection and repair.
 

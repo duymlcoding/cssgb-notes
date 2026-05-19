@@ -34,7 +34,7 @@ The procedure, as listed in the CSSGB Handbook, is:
 
 ### Example 1: Home Shopping Channel – 95% Confidence Interval
 
-From a sample of $n = 32$ customers, the average order is $\bar{X} = \\$78.25$, and the population standard deviation is $\sigma = \\$37.50$. Compute the 95% confidence interval for the population mean.
+From a sample of $n = 32$ customers, the average order is $\bar{X} = $78.25$, and the population standard deviation is $\sigma = $37.50$. Compute the 95% confidence interval for the population mean.
 
 $Z_{0.025} = 1.96$ (for a 95% two-sided interval).
 
@@ -50,7 +50,7 @@ $$
 78.25 \pm 13.00 \;\Rightarrow\; (65.25,\; 91.25)
 $$
 
-Interpretation: We are 95% confident that the true average order amount falls between \\\$65.25 and \\\$91.25.
+Interpretation: We are 95% confident that the true average order amount falls between $65.25$ and $91.25$.
 
 If the calculated interval had not captured the hypothesized value that management was testing, the practitioner would reject the null hypothesis and conclude that the population mean differs from that value.
 
@@ -95,7 +95,7 @@ The degrees of freedom are $n-1$. The critical values come from a chi-square tab
 
 ### Example 3: Comparing Process Variances
 
-A sample of $n = 35$ parts yields a variance $ s^2 = 46$ units. The null hypothesis states that the population variance equals \$36$ (a target from a different processing method). Use α = 0.05, two-sided.
+A sample of $n = 35$ parts yields a variance $ s^2 = 46$ units. The null hypothesis states that the population variance equals $36$ (a target from a different processing method). Use α = 0.05, two-sided.
 
 $$
 \chi^2 = \frac{(35-1) \times 46}{36} = \frac{34 \times 46}{36} = \frac{1564}{36} \approx 43.44
@@ -226,7 +226,7 @@ $$
 Z = \frac{0.03 - 0.02}{\sqrt{\frac{0.02 \times 0.98}{500}}} = \frac{0.01}{\sqrt{\frac{0.0196}{500}}} = \frac{0.01}{\sqrt{0.0000392}} = \frac{0.01}{0.006261} \approx 1.597
 $$
 
-\$1.597 < 1.645$, so do not reject $ H_0$.
+$1.597$ < 1.645$, so do not reject $ H_0$.
 
 Conclusion: At the 0.05 significance level, the data do not provide sufficient evidence that the vendor’s at-most-2% claim is false. The handbook’s Minitab analysis reports a p-value of 0.055, consistent with this conclusion.
 
@@ -277,7 +277,7 @@ $$
 t = \frac{5.2334 - 5.2208}{0.0162 \sqrt{\frac{1}{5} + \frac{1}{5}}} = \frac{0.0126}{0.0162 \sqrt{0.4}} = \frac{0.0126}{0.0162 \times 0.6325} = \frac{0.0126}{0.01024} \approx 1.23
 $$
 
-Degrees of freedom = 8. Critical value $t_{0.025,8} = 2.306$ (two-tailed α = 0.05). Since \\$1.23 < 2.306$, fail to reject $ H_0$. The data do not show a significant difference between the machine means. The handbook’s Minitab output yields a p-value of 0.255.
+Degrees of freedom = 8. Critical value $t_{0.025,8} = 2.306$ (two-tailed α = 0.05). Since $1.23 < 2.306$, fail to reject $ H_0$. The data do not show a significant difference between the machine means. The handbook’s Minitab output yields a p-value of 0.255.
 
 Had the t-statistic exceeded the critical value, the team would conclude the machines produce parts with different average dimensions and investigate the differences.
 
@@ -347,7 +347,7 @@ $$
 t = \frac{0.0126}{0.00919 / \sqrt{5}} = \frac{0.0126}{0.00919 / 2.236} = \frac{0.0126}{0.00411} \approx 3.08
 $$
 
-$df = 4$. For a two-tailed test at α = 0.05, $ t_{0.025,4} = 2.776$. Since \$3.08 > 2.776$, reject $ H_0: \mu_d = 0$.
+$df = 4$. For a two-tailed test at α = 0.05, $ t_{0.025,4} = 2.776$. Since $3.08$ > 2.776$, reject $ H_0: \mu_d = 0$.
 
 Conclusion: Calibration produced a statistically significant difference in measurements. The 95% confidence interval for the mean difference does not include 0 (0.00123 to 0.02397), confirming the result.
 
@@ -380,7 +380,7 @@ $$
 F = \frac{1800^2}{600^2} = \frac{3,240,000}{360,000} = 9
 $$
 
-Numerator df = 7, denominator df = 5. From the F-table, the critical value $F_{0.05,7,5} = 4.88$. Since \$9 > 4.88$, reject $ H_0$.
+Numerator df = 7, denominator df = 5. From the F-table, the critical value $F_{0.05,7,5} = 4.88$. Since $9$ > 4.88$, reject $ H_0$.
 
 There is evidence that the variance has decreased, meaning crispness is more consistent after aging one month.
 
@@ -534,10 +534,10 @@ Total = 27+60+100+21 = 208.
 
 Compute expected frequencies by multiplying each proportion by 208:
 
-- Paint run: \$0.16 \times 208 = 33.28$
-- Paint blister: \$0.28 \times 208 = 58.24$
-- Decal crooked: \$0.42 \times 208 = 87.36$
-- Door cracked: \$0.14 \times 208 = 29.12$
+- Paint run: $0.16 \times 208 = 33.28$
+- Paint blister: $0.28 \times 208 = 58.24$
+- Decal crooked: $0.42 \times 208 = 87.36$
+- Door cracked: $0.14 \times 208 = 29.12$
 
 Now compute the chi-square sum:
 
@@ -552,9 +552,9 @@ $$
 
 Total $\chi^2 = 1.185 + 0.053 + 1.829 + 2.264 = 5.331$
 
-Degrees of freedom = \$4 - 1 = 3$. For α = 0.05, the critical value from the chi-square table is 7.815.
+Degrees of freedom = $4 - 1 = 3$. For α = 0.05, the critical value from the chi-square table is 7.815.
 
-Since \\$5.331 < 7.815$, do not reject $ H_0$. The data do not indicate a change in the defect distribution. The Minitab analysis confirms a p-value of 0.149.
+Since $5.331 < 7.815$, do not reject $ H_0$. The data do not indicate a change in the defect distribution. The Minitab analysis confirms a p-value of 0.149.
 
 If the test statistic had exceeded 7.815, the conclusion would be that the distribution has shifted, prompting a root-cause analysis of the defect categories that contributed most to the discrepancy.
 

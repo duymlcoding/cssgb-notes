@@ -83,7 +83,7 @@ $$
 \phi(z) = \frac{1}{\sqrt{2\pi}} e^{-z^2/2}
 $$
 
-and the cumulative distribution function $\Phi(z)$ gives the area to the left of $ z $. The area beyond $ Z_U$ is \$1 - \Phi(Z_U)$, and the area beyond $ Z_L$ (lower tail) is $\Phi(-Z_L) = 1 - \Phi(Z_L)$. In practice, a standard normal table supplies these areas. The total proportion nonconforming is the sum of the two tail areas.
+and the cumulative distribution function $\Phi(z)$ gives the area to the left of $ z $. The area beyond $ Z_U$ is $1 - \Phi(Z_U)$, and the area beyond $ Z_L$ (lower tail) is $\Phi(-Z_L) = 1 - \Phi(Z_L)$. In practice, a standard normal table supplies these areas. The total proportion nonconforming is the sum of the two tail areas.
 
 ### Natural Process Limits
 
@@ -118,10 +118,10 @@ Z_L = \frac{1.065 - 1.00}{0.024} = \frac{0.065}{0.024} \approx 2.70
 $$
 
 **Step 3: Obtain tail areas from a standard normal table.**  
-The area beyond $Z_U = 1.46$ is \$0.0721$ (or 7.21%).  
-The area beyond $Z_L = 2.70$ is \$0.0035$ (or 0.35%).
+The area beyond $Z_U = 1.46$ is $0.0721$ (or 7.21%).  
+The area beyond $Z_L = 2.70$ is $0.0035$ (or 0.35%).
 
-**Interpretation:** Approximately 7.21% of shipped packages are expected to be overweight, and 0.35% to be underweight. The total predicted nonconformance is \$7.21\% + 0.35\% = 7.56\%$.
+**Interpretation:** Approximately 7.21% of shipped packages are expected to be overweight, and 0.35% to be underweight. The total predicted nonconformance is $7.21\% + 0.35\% = 7.56\%$.
 
 **Step 4: Compute natural process limits.**
 
@@ -154,7 +154,7 @@ Z_L = \frac{10.22 - 10.00}{0.0516} \approx \frac{0.22}{0.0516} \approx 4.26
 $$
 
 **Step 3: Tail areas.**  
-From a standard normal table, the area beyond $Z_U = 3.49$ is about \$0.00024$ (0.024%). The area beyond $ Z_L = 4.26$ is approximately \$0.00001$ (0.001%). Total predicted nonconformance is roughly \$0.025\%$.
+From a standard normal table, the area beyond $Z_U = 3.49$ is about $0.00024$ (0.024%). The area beyond $ Z_L = 4.26$ is approximately $0.00001$ (0.001%). Total predicted nonconformance is roughly $0.025$\%$.
 
 **Step 4: Natural process limits.**
 

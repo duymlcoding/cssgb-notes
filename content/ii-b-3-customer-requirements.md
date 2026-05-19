@@ -81,7 +81,7 @@ Consider a restaurant experiencing low customer satisfaction with food quality. 
 * Why is the meat undercooked? The grill is not properly calibrated.
 * Why is the grill not properly calibrated? The morning cook responsible for calibration was not trained.
 
-At this point, the team has identified that a customer requirement, hamburgers cooked to a safe and expected temperature, was not being met. The gap can now be expressed in a strong problem statement that quantifies its magnitude: “In November and December, 50,000 complaints of undercooked bread were received from the Canton facility, costing an estimated \\$125,000 per month.” The problem statement defines the requirement (proper bake), the current failure rate, and the financial impact, giving leadership a clear justification for the improvement project.
+At this point, the team has identified that a customer requirement, hamburgers cooked to a safe and expected temperature, was not being met. The gap can now be expressed in a strong problem statement that quantifies its magnitude: “In November and December, 50,000 complaints of undercooked bread were received from the Canton facility, costing an estimated 125,000 per month.” The problem statement defines the requirement (proper bake), the current failure rate, and the financial impact, giving leadership a clear justification for the improvement project.
 
 When crafting a problem statement that captures a customer requirement gap, answer these questions:
 

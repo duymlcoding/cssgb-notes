@@ -36,7 +36,7 @@ The error matrix below summarises all possible outcomes.
 | **Fail to reject $H_0$**  | $ p = 1 - \alpha $, correct outcome | $ p = \beta $, type II error |
 | **Reject $H_0$**          | $ p = \alpha $, type I error         | $ p = 1 - \beta $, correct outcome |
 
-The probability \$1 - \beta$ is called **power**. Higher power is better in a hypothesis test. Power represents the likelihood that the test correctly rejects a false null hypothesis.
+The probability $1 - \beta$ is called **power**. Higher power is better in a hypothesis test. Power represents the likelihood that the test correctly rejects a false null hypothesis.
 
 ## One-Tail Test
 
@@ -159,7 +159,7 @@ The alternative hypothesis determines the type of test:
 - Critical values: $\pm 1.96$.
 - Compute $Z $: $\bar{X} = 1.88$, $\mu_0 = 1.84$, $\sigma = 0.03$, $ n = 64$
   $$Z = \frac{1.88 - 1.84}{0.03 / \sqrt{64}} = \frac{0.04}{0.03 / 8} = \frac{0.04}{0.00375} \approx 10.67$$
-- \\$10.67 > 1.96$, so reject $ H_0$.
+- $10.67 > 1.96$, so reject $ H_0$.
 - Conclusion: At the 0.05 significance level, the data indicate the vendor's claim of average weight 1.84 is false.
 
 If the test statistic had fallen between -1.96 and 1.96, we would have failed to reject $H_0$ and concluded there was not enough evidence to contradict the vendor's claim.
@@ -167,7 +167,7 @@ If the test statistic had fallen between -1.96 and 1.96, we would have failed to
 **Example 2 (one-tail Z-test).** Using the same data, test whether the mean is less than 1.84 (left-tail test). $H_0: \mu \geq 1.84$, $ H_1: \mu < 1.84$.
 - $\alpha = 0.05$, left tail: critical value = $-1.645$ (since $ Z_{0.05}=1.645$).
 - Test statistic: $Z = 10.67$ (same calculation).
-- \$10.67$ is not less than -1.645, so fail to reject $ H_0$.
+- $10.67$ is not less than -1.645, so fail to reject $ H_0$.
 - Conclusion: There is insufficient evidence to conclude the mean weight is less than 1.84.
 
 For a right-tailed test $H_1: \mu > 1.84$, critical value would be 1.645, and $ Z = 10.67$ would fall in the rejection region, leading to rejection of $ H_0$ and support for the claim that the mean exceeds 1.84.
@@ -220,5 +220,5 @@ If the sample mean had been lower, producing a t-statistic less than -1.328, the
 2. To determine the correct hypothesis setup, identify the research claim and place it in $H_1$. Directional claims (greater than, less than) produce one-tailed tests; a claim of difference produces a two-tailed test.
 3. For sample size calculation using the formula $n = Z^2 \sigma^2 / E^2$, ensure all units are the same and $ E$ represents the smallest shift you must detect. If $ n$ is not an integer, always round up.
 4. Distinguish Type I and Type II errors by cost context: Type I error (producer's risk) is rejecting good product, Type II error (consumer's risk) is accepting bad product. Given a scenario, identify which error is more costly to the organization.
-5. Power is the probability of correctly rejecting a false null hypothesis (\$1 - \beta $). If a problem asks you to evaluate risk of missing a real effect, think about low power and the need for a larger sample size.
+5. Power is the probability of correctly rejecting a false null hypothesis ($1 - \beta $). If a problem asks you to evaluate risk of missing a real effect, think about low power and the need for a larger sample size.
 
